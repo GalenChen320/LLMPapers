@@ -132,7 +132,7 @@
             padding: 24px;
             border: 1px solid #ece4d8;
             transition: all 0.3s ease;
-            cursor: default;
+            cursor: pointer;
             box-shadow: 0 1px 6px rgba(0,0,0,0.04);
         }
 
@@ -358,12 +358,132 @@
             to { transform: rotate(360deg); }
         }
 
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+            overflow-y: auto;
+        }
+
+        .modal-overlay.active { display: flex; }
+
+        .modal {
+            background: #fff;
+            border-radius: 16px;
+            max-width: 780px;
+            width: 100%;
+            padding: 36px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            position: relative;
+            margin: auto;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.4rem;
+            color: #a09080;
+            cursor: pointer;
+            transition: color 0.2s;
+            padding: 4px 8px;
+        }
+
+        .modal-close:hover { color: #3a3a3a; }
+
+        .modal .paper-venue { margin-bottom: 16px; }
+
+        .modal .modal-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2d2418;
+            line-height: 1.45;
+            margin-bottom: 12px;
+        }
+
+        .modal .modal-authors {
+            font-size: 0.9rem;
+            color: #8a7a6a;
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+
+        .modal .modal-authors i { color: #c49a6c; margin-right: 4px; }
+
+        .modal .modal-tldr {
+            background: #fdf6ec;
+            border-left: 3px solid #c49a6c;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+            color: #6a5a4a;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .modal .modal-tldr strong { color: #c49a6c; }
+
+        .modal .modal-abstract {
+            font-size: 0.92rem;
+            color: #5a4a3a;
+            line-height: 1.75;
+            margin-bottom: 20px;
+        }
+
+        .modal .modal-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .modal .modal-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .modal .modal-actions a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            background: #faf8f3;
+            border: 1px solid #ece4d8;
+            border-radius: 8px;
+            color: #5b4636;
+            text-decoration: none;
+            font-size: 0.88rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .modal .modal-actions a:hover {
+            background: #c49a6c;
+            color: #fff;
+            border-color: #c49a6c;
+        }
+
+        .modal .modal-actions .fav-btn {
+            font-size: 1.2rem;
+            margin-left: auto;
+        }
+
         @media (max-width: 768px) {
             .papers-grid { grid-template-columns: 1fr; }
             header h1 { font-size: 1.8rem; }
             .filters { flex-direction: column; align-items: stretch; }
             .filter-group { flex-direction: column; align-items: stretch; }
             select, input[type="text"] { min-width: 100%; }
+            .modal { padding: 24px; }
         }
     </style>
 </head>
@@ -425,6 +545,13 @@
             <button id="prev-btn"><i class="fas fa-chevron-left"></i> Previous</button>
             <span id="page-info"></span>
             <button id="next-btn">Next <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+<div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+            <div id="modal-content"></div>
         </div>
     </div>
 
@@ -594,7 +721,7 @@
                 ? authors.slice(0, 5).join(', ') + ` et al. (${authors.length} authors)`
                 : authors.join(', ');
 
-            return `<div class="paper-card">
+            return `<div class="paper-card" data-url="${paper.pdf_url}">
                 <span class="paper-venue ${venueClass}">${paper.venue}</span>
                 <h3 class="paper-title">${escapeHtml(paper.title)}</h3>
                 <p class="paper-authors"><i class="fas fa-users"></i> ${escapeHtml(authorsStr)}</p>
@@ -629,13 +756,78 @@
         document.getElementById('papers-container').addEventListener('click', (e) => {
             const btn = e.target.closest('.fav-btn');
             if (btn) {
+                e.stopPropagation();
                 const url = btn.dataset.url;
                 const paper = allPapers.find(p => p.pdf_url === url);
                 if (paper) {
                     toggleFavorite(paper);
                     btn.classList.toggle('active');
                 }
+                return;
             }
+            const card = e.target.closest('.paper-card');
+            if (card) {
+                const url = card.dataset.url;
+                const paper = allPapers.find(p => p.pdf_url === url);
+                if (paper) openModal(paper);
+            }
+        });
+
+        function openModal(paper) {
+            const [conf] = paper.venue.split(' ');
+            const venueClass = `venue-${conf.toLowerCase()}`;
+            const keywords = paper.keywords || [];
+            const area = paper.primary_area;
+            const award = paper.award;
+            const authors = paper.authors || [];
+
+            let tags = '';
+            if (award) tags += `<span class="tag award"><i class="fas fa-award"></i> ${award}</span>`;
+            if (area) tags += `<span class="tag area">${area}</span>`;
+            keywords.forEach(kw => { tags += `<span class="tag">${kw}</span>`; });
+
+            const tldr = paper.tldr ? `<div class="modal-tldr"><strong>TL;DR:</strong> ${escapeHtml(paper.tldr)}</div>` : '';
+
+            document.getElementById('modal-content').innerHTML = `
+                <span class="paper-venue ${venueClass}">${paper.venue}</span>
+                <h2 class="modal-title">${escapeHtml(paper.title)}</h2>
+                <p class="modal-authors"><i class="fas fa-users"></i> ${escapeHtml(authors.join(', '))}</p>
+                ${tldr}
+                <p class="modal-abstract">${escapeHtml(paper.abstract || 'No abstract available')}</p>
+                ${tags ? `<div class="modal-tags">${tags}</div>` : ''}
+                <div class="modal-actions">
+                    <a href="${paper.pdf_url}" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="${paper.html_url}" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
+                    <button class="fav-btn${isFavorite(paper) ? ' active' : ''}" data-url="${paper.pdf_url}" title="Toggle favorite"><i class="fas fa-heart"></i></button>
+                </div>
+            `;
+
+            document.getElementById('modal-overlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('modal-overlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('modal-close').addEventListener('click', closeModal);
+        document.getElementById('modal-overlay').addEventListener('click', (e) => {
+            const btn = e.target.closest('.fav-btn');
+            if (btn) {
+                e.stopPropagation();
+                const url = btn.dataset.url;
+                const paper = allPapers.find(p => p.pdf_url === url);
+                if (paper) {
+                    toggleFavorite(paper);
+                    btn.classList.toggle('active');
+                }
+                return;
+            }
+            if (e.target === document.getElementById('modal-overlay')) closeModal();
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
         });
 
         document.getElementById('prev-btn').addEventListener('click', () => {
