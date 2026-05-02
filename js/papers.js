@@ -17,7 +17,7 @@ const venueFiles = {
 let allPapers = [];
 let filteredPapers = [];
 let currentPage = 1;
-const papersPerPage = 20;
+let papersPerPage = 20;
 let showFavoritesOnly = false;
 
 async function loadPapers() {
@@ -109,6 +109,10 @@ function renderPapers() {
     document.getElementById('prev-btn').disabled = currentPage === 1;
     document.getElementById('next-btn').disabled = currentPage === totalPages;
     document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+    const jumpInput = document.getElementById('page-jump-input');
+    jumpInput.max = totalPages;
+    jumpInput.value = currentPage;
+    jumpInput.placeholder = `1-${totalPages}`;
 }
 
 function createPaperCard(paper) {

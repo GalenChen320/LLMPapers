@@ -286,6 +286,80 @@ input[type="text"] { min-width: 280px; }
 
 .pagination span { color: #8a7a6a; font-size: 0.9rem; }
 
+.page-jump {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid #ddd4c6;
+}
+
+.page-jump label {
+    font-size: 0.85rem;
+    color: #8a7a6a;
+    white-space: nowrap;
+}
+
+.page-jump input[type="number"] {
+    width: 60px;
+    min-width: 60px;
+    background: #faf8f3;
+    border: 1px solid #ddd4c6;
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: #3a3a3a;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: inherit;
+}
+
+.page-jump input[type="number"]:focus {
+    outline: none;
+    border-color: #c49a6c;
+    box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.15);
+}
+
+.page-jump button {
+    background: #fff;
+    border: 1px solid #ddd4c6;
+    color: #5b4636;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.page-jump button:hover {
+    background: #c49a6c;
+    color: #fff;
+    border-color: #c49a6c;
+}
+
+.per-page-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 12px;
+    padding-left: 12px;
+    border-left: 1px solid #ddd4c6;
+}
+
+.per-page-selector label {
+    font-size: 0.85rem;
+    color: #8a7a6a;
+    white-space: nowrap;
+}
+
+.per-page-selector label i { color: #c49a6c; }
+
+.per-page-selector select {
+    min-width: 70px;
+    padding: 8px 12px;
+}
+
 .no-results {
     text-align: center;
     padding: 60px 20px;
