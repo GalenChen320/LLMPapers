@@ -530,3 +530,21 @@ select:focus, input[type="text"]:focus {
     .custom-select { min-width: 100%; }
     .modal { padding: 24px; }
 }
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ece4d8;
+    color: #a09080;
+    font-size: 0.82rem;
+}
+
+footer a {
+    color: #c49a6c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
