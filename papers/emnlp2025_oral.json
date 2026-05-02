@@ -1,1 +1,864 @@
-[{"title": "Constructions are Revealed in Word Distributions", "authors": ["Joshua Rozner", "Leonie Weissweiler", "Kyle Mahowald", "Cory Shain"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.108.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.108/"}, {"title": "AMACE: Automatic Multi-Agent Chart Evolution for Iteratively Tailored Chart Generation", "authors": ["Hyuk Namgoong", "Jeesu Jung", "Hyeonseok Kang", "Yohan Lee", "Sangkeun Jung"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1089.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1089/"}, {"title": "HMoE: Heterogeneous Mixture of Experts for Language Modeling", "authors": ["An Wang", "Xingwu Sun", "Ruobing Xie", "Shuaipeng Li", "Jiaqi Zhu", "Zhen Yang", "Pinxue Zhao", "Weidong Han", "Zhanhui Kang", "Di Wang", "Naoaki Okazaki", "Cheng-zhong Xu"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1115.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1115/"}, {"title": "Lemmatization ofPolish Multi-word Expressions", "authors": ["Magdalena Król", "Aleksander Smywiński-Pohl", "Zbigniew Kaleta", "Paweł Lewkowicz"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1126.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1126/"}, {"title": "InterIDEAS: Philosophical Intertextuality viaLLMs", "authors": ["Yue Yang", "Yinzhi Xu", "Chenghao Huang", "JohnMichael Jurgensen", "Han Hu", "Hao Wang"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Best Special Theme Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1180.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1180/"}, {"title": "Discriminating Form and Meaning in Multilingual Models with Minimal-PairABXTasks", "authors": ["Maureen de Seyssel", "Jie Chi", "Skyler Seto", "Maartje Ter Hoeve", "Masha Fedzechkina", "Natalie Schluter"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1210.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1210/"}, {"title": "To Mask or to Mirror: Human-AIAlignment in Collective Reasoning", "authors": ["Crystal Qian", "Aaron T Parisi", "Clémentine Bouleau", "Vivian Tsai", "Maël Lebreton", "Lucas Dixon"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.122.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.122/"}, {"title": "Tokenization and Representation Biases in Multilingual Models on DialectalNLPTasks", "authors": ["Vani Kanjirangat", "Tanja Samardzic", "Ljiljana Dolamic", "Fabio Rinaldi"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1224.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1224/"}, {"title": "Infini-gram mini: Exact n-gram Search at theInternet Scale withFM-Index", "authors": ["Hao Xu", "Jiacheng Liu", "Yejin Choi", "Noah A. Smith", "Hannaneh Hajishirzi"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Best Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1268.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1268/"}, {"title": "Causal Interventions Reveal Shared Structure AcrossEnglish Filler–Gap Constructions", "authors": ["Sasha Boguraev", "Christopher Potts", "Kyle Mahowald"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1271.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1271/"}, {"title": "ReasonMed: A 370KMulti-Agent Generated Dataset for Advancing Medical Reasoning", "authors": ["Yu Sun", "Xingyu Qian", "Weiwen Xu", "Hao Zhang", "Chenghao Xiao", "Long Li", "Deli Zhao", "Wenbing Huang", "Tingyang Xu", "Qifeng Bai", "Yu Rong"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1344.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1344/"}, {"title": "Detecting Legal Citations inUnitedKingdom Court Judgments", "authors": ["Holli Sargeant", "Andreas Östling", "Måns Magnusson"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1361.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1361/"}, {"title": "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks", "authors": ["Sotaro Takeshita", "Yurina Takeshita", "Daniel Ruffinelli", "Simone Paolo Ponzetto"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "People's Choice Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1410.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1410/"}, {"title": "MAviS: A Multimodal Conversational Assistant For Avian Species", "authors": ["Yevheniia Kryklyvets", "Mohammed Irfan Kurpath", "Sahal Shaji Mullappilly", "Jinxing Zhou", "Fahad Shahbaz Khan", "Rao Muhammad Anwer", "Salman Khan", "Hisham Cholakkal"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1455.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1455/"}, {"title": "Whisper-UT: A Unified Translation Framework for Speech and Text", "authors": ["Cihan Xiao", "Matthew Wiesner", "Debashish Chakraborty", "Reno Kriz", "Keith Cunningham", "Kenton Murray", "Kevin Duh", "Luis Tavarez-Arce", "Paul McNamee", "Sanjeev Khudanpur"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.148.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.148/"}, {"title": "Cardiverse: HarnessingLLMs for Novel Card Game Prototyping", "authors": ["Danrui Li", "Sen Zhang", "Samuel S. Sohn", "Kaidong Hu", "Muhammad Usman", "Mubbasir Kapadia"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1511.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1511/"}, {"title": "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?", "authors": ["Hua Shen", "Nicholas Clark", "Tanu Mitra"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.154.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.154/"}, {"title": "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics", "authors": ["Xiaoyuan Wu", "Weiran Lin", "Omer Akgul", "Lujo Bauer"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1554.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1554/"}, {"title": "BeyondWER: Probing Whisper’s Sub‐token Decoder Across Diverse Language Resource Levels", "authors": ["Siyu Liang", "Nicolas Ballier", "Gina-Anne Levow", "Richard Wright"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1591.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1591/"}, {"title": "RALS: Resources and Baselines forRomanian Automatic Lexical Simplification", "authors": ["Fabian Anghel", "Cristea Petru-Theodor", "Claudiu Creangă", "Sergiu Nisioi"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1603.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1603/"}, {"title": "AccessEval: Benchmarking Disability Bias in Large Language Models", "authors": ["Srikant Panda", "Amit Agarwal", "Hitesh Laxmichand Patel"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Social Impact Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1653.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1653/"}, {"title": "NormGenesis: Multicultural Dialogue Generation via Exemplar-Guided Social Norm Modeling and Violation Recovery", "authors": ["Minki Hong", "Jangho Choi", "Jihie Kim"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1715.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1715/"}, {"title": "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference", "authors": ["Pingjun Hong", "Beiduo Chen", "Siyao Peng", "Marie-Catherine de Marneffe", "Barbara Plank"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1728.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1728/"}, {"title": "Liaozhai through the Looking-Glass: On Paratextual Explicitation of Culture-Bound Terms in Machine Translation", "authors": ["Sherrie Shen", "Weixuan Wang", "Alexandra Birch"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1744.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1744/"}, {"title": "Aligning Text/Speech Representations from Multimodal Models withMEGBrain Activity During Listening", "authors": ["Padakanti Srijith", "Khushbu Pahwa", "Radhika Mamidi", "Bapi Raju Surampudi", "Manish Gupta", "Subba Reddy Oota"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1748.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1748/"}, {"title": "FoREST: Frame of Reference Evaluation in Spatial Reasoning Tasks", "authors": ["Tanawan Premsri", "Parisa Kordjamshidi"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1772.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1772/"}, {"title": "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations", "authors": ["Linyang He", "Qiaolin Wang", "Xilin Jiang", "Nima Mesgarani"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1790.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1790/"}, {"title": "Mind the Blind Spots: A Focus-Level Evaluation Framework forLLMReviews", "authors": ["Hyungyu Shin", "Jingyu Tang", "Yoonjoo Lee", "Nayoung Kim", "Hyunseung Lim", "Ji Yong Cho", "Hwajung Hong", "Moontae Lee", "Juho Kim"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.1805.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.1805/"}, {"title": "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations", "authors": ["Ziwei Ji", "Lei Yu", "Yeskendir Koishekenov", "Yejin Bang", "Anthony Hartshorn", "Alan Schelten", "Cheng Zhang", "Pascale Fung", "Nicola Cancedda"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.187.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.187/"}, {"title": "Quantifying Language Disparities in Multilingual Large Language Models", "authors": ["Songbo Hu", "Ivan Vulić", "Anna Korhonen"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.199.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.199/"}, {"title": "Collab-Overcooked: Benchmarking and Evaluating Large Language Models as Collaborative Agents", "authors": ["Haochen Sun", "Shuwen Zhang", "Lujie Niu", "Lei Ren", "Hao Xu", "Hao Fu", "Fangkun Zhao", "Caixia Yuan", "Xiaojie Wang"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.249.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.249/"}, {"title": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model", "authors": ["Xinyue Lou (娄馨月)", "You Li (李铀)", "Jinan Xu (徐金安)", "Xiangyu Shi", "Chi Chen", "Kaiyu Huang (黄锴宇)"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.261.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.261/"}, {"title": "PAFT: Prompt-Agnostic Fine-Tuning", "authors": ["Chenxing Wei", "Mingwen Ou", "Ying He", "Yao Shu", "Fei Yu"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.37.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.37/"}, {"title": "PSET: a Phonetics-Semantics Evaluation Testbed", "authors": ["Gianluca Sperduti", "Dong Nguyen"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.373.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.373/"}, {"title": "GATEAU: Selecting Influential Samples for Long Context Alignment", "authors": ["Shuzheng Si", "Haozhe Zhao", "Gang Chen", "Yunshui Li", "Kangyang Luo", "Chuancheng Lv", "Kaikai An", "Fanchao Qi", "Baobao Chang (常宝宝)", "Maosong Sun"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.375.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.375/"}, {"title": "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement", "authors": ["Shaoqing Lin", "Chong Teng", "Fei Li", "Donghong Ji", "Lizhen Qu", "Zhuang Li"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.398.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.398/"}, {"title": "AbsVis – Benchmarking How Humans and Vision-Language Models “See” Abstract Concepts in Images", "authors": ["Tarun Tater", "Diego Frassinelli", "Sabine Schulte im Walde"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.417.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.417/"}, {"title": "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers", "authors": ["Siva Rajesh Kasa", "Karan Gupta", "Sumegh Roychowdhury", "Ashutosh Kumar", "Yaswanth Biruduraju", "Santhosh Kumar Kasa", "Pattisapu Nikhil Priyatam", "Arindam Bhattacharya", "Shailendra Agarwal", "Vijay Huddar"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.486.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.486/"}, {"title": "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps", "authors": ["Martin Tutek", "Fateme Hashemi Chaleshtori", "Ana Marasović", "Yonatan Belinkov"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.504.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.504/"}, {"title": "Analyzing Uncertainty ofLLM-as-a-Judge: Interval Evaluations with Conformal Prediction", "authors": ["Huanxin Sheng", "Xinyi Liu", "Hangfeng He", "Jieyu Zhao", "Jian Kang"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.569.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.569/"}, {"title": "LingGym: How Far AreLLMs from Thinking Like Field Linguists?", "authors": ["Changbing Yang", "Franklin Ma", "Freda Shi", "Jian Zhu"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.69.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.69/"}, {"title": "ReSo: A Reward-driven Self-organizingLLM-based Multi-Agent System for Reasoning Tasks", "authors": ["Heng Zhou", "Hejia Geng", "Xiangyuan Xue", "Li Kang", "Yiran Qin", "Zhiyong Wang", "Zhenfei Yin", "Lei Bai"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.808.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.808/"}, {"title": "Comparing human andLLMpoliteness strategies in free production", "authors": ["Haoran Zhao", "Robert D. Hawkins"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.820.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.820/"}, {"title": "Prototypical Human-AICollaboration Behaviors fromLLM-Assisted Writing in the Wild", "authors": ["Sheshera Mysore", "Debarati Das", "Hancheng Cao", "Bahareh Sarrafzadeh"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.852.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.852/"}, {"title": "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning", "authors": ["Jingyan Shen", "Jiarui Yao", "Rui Yang", "Yifan Sun", "Feng Luo", "Rui Pan", "Tong Zhang", "Han Zhao"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Outstanding Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.882.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.882/"}, {"title": "Autoformalization in the Wild: AssessingLLMs on Real-World Mathematical Definitions", "authors": ["Lan Zhang", "Marco Valentino", "André Freitas"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "Best Resource Paper", "pdf_url": "https://aclanthology.org/2025.emnlp-main.90.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.90/"}, {"title": "Who Holds the Pen? Caricature and Perspective inLLMRetellings of History", "authors": ["Lubna Zahan Lamia", "Mabsur Fatin Bin Hossain", "Md Mosaddek Khan"], "abstract": "", "keywords": [], "tldr": "", "venue": "EMNLP 2025", "primary_area": "", "award": "SAC Highlight Award", "pdf_url": "https://aclanthology.org/2025.emnlp-main.996.pdf", "html_url": "https://aclanthology.org/2025.emnlp-main.996/"}]
+[
+  {
+    "title": "Constructions are Revealed in Word Distributions",
+    "authors": [
+      "Joshua Rozner",
+      "Leonie Weissweiler",
+      "Kyle Mahowald",
+      "Cory Shain"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.108.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.108/"
+  },
+  {
+    "title": "AMACE: Automatic Multi-Agent Chart Evolution for Iteratively Tailored Chart Generation",
+    "authors": [
+      "Hyuk Namgoong",
+      "Jeesu Jung",
+      "Hyeonseok Kang",
+      "Yohan Lee",
+      "Sangkeun Jung"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1089.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1089/"
+  },
+  {
+    "title": "HMoE: Heterogeneous Mixture of Experts for Language Modeling",
+    "authors": [
+      "An Wang",
+      "Xingwu Sun",
+      "Ruobing Xie",
+      "Shuaipeng Li",
+      "Jiaqi Zhu",
+      "Zhen Yang",
+      "Pinxue Zhao",
+      "Weidong Han",
+      "Zhanhui Kang",
+      "Di Wang",
+      "Naoaki Okazaki",
+      "Cheng-zhong Xu"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1115.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1115/"
+  },
+  {
+    "title": "Lemmatization ofPolish Multi-word Expressions",
+    "authors": [
+      "Magdalena Król",
+      "Aleksander Smywiński-Pohl",
+      "Zbigniew Kaleta",
+      "Paweł Lewkowicz"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1126.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1126/"
+  },
+  {
+    "title": "InterIDEAS: Philosophical Intertextuality viaLLMs",
+    "authors": [
+      "Yue Yang",
+      "Yinzhi Xu",
+      "Chenghao Huang",
+      "JohnMichael Jurgensen",
+      "Han Hu",
+      "Hao Wang"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Best Special Theme Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1180.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1180/"
+  },
+  {
+    "title": "Discriminating Form and Meaning in Multilingual Models with Minimal-PairABXTasks",
+    "authors": [
+      "Maureen de Seyssel",
+      "Jie Chi",
+      "Skyler Seto",
+      "Maartje Ter Hoeve",
+      "Masha Fedzechkina",
+      "Natalie Schluter"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1210.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1210/"
+  },
+  {
+    "title": "To Mask or to Mirror: Human-AIAlignment in Collective Reasoning",
+    "authors": [
+      "Crystal Qian",
+      "Aaron T Parisi",
+      "Clémentine Bouleau",
+      "Vivian Tsai",
+      "Maël Lebreton",
+      "Lucas Dixon"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.122.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.122/"
+  },
+  {
+    "title": "Tokenization and Representation Biases in Multilingual Models on DialectalNLPTasks",
+    "authors": [
+      "Vani Kanjirangat",
+      "Tanja Samardzic",
+      "Ljiljana Dolamic",
+      "Fabio Rinaldi"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1224.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1224/"
+  },
+  {
+    "title": "Infini-gram mini: Exact n-gram Search at theInternet Scale withFM-Index",
+    "authors": [
+      "Hao Xu",
+      "Jiacheng Liu",
+      "Yejin Choi",
+      "Noah A. Smith",
+      "Hannaneh Hajishirzi"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Best Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1268.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1268/"
+  },
+  {
+    "title": "Causal Interventions Reveal Shared Structure AcrossEnglish Filler–Gap Constructions",
+    "authors": [
+      "Sasha Boguraev",
+      "Christopher Potts",
+      "Kyle Mahowald"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1271.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1271/"
+  },
+  {
+    "title": "ReasonMed: A 370KMulti-Agent Generated Dataset for Advancing Medical Reasoning",
+    "authors": [
+      "Yu Sun",
+      "Xingyu Qian",
+      "Weiwen Xu",
+      "Hao Zhang",
+      "Chenghao Xiao",
+      "Long Li",
+      "Deli Zhao",
+      "Wenbing Huang",
+      "Tingyang Xu",
+      "Qifeng Bai",
+      "Yu Rong"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1344.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1344/"
+  },
+  {
+    "title": "Detecting Legal Citations inUnitedKingdom Court Judgments",
+    "authors": [
+      "Holli Sargeant",
+      "Andreas Östling",
+      "Måns Magnusson"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1361.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1361/"
+  },
+  {
+    "title": "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+    "authors": [
+      "Sotaro Takeshita",
+      "Yurina Takeshita",
+      "Daniel Ruffinelli",
+      "Simone Paolo Ponzetto"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "People's Choice Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1410.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1410/"
+  },
+  {
+    "title": "MAviS: A Multimodal Conversational Assistant For Avian Species",
+    "authors": [
+      "Yevheniia Kryklyvets",
+      "Mohammed Irfan Kurpath",
+      "Sahal Shaji Mullappilly",
+      "Jinxing Zhou",
+      "Fahad Shahbaz Khan",
+      "Rao Muhammad Anwer",
+      "Salman Khan",
+      "Hisham Cholakkal"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1455.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1455/"
+  },
+  {
+    "title": "Whisper-UT: A Unified Translation Framework for Speech and Text",
+    "authors": [
+      "Cihan Xiao",
+      "Matthew Wiesner",
+      "Debashish Chakraborty",
+      "Reno Kriz",
+      "Keith Cunningham",
+      "Kenton Murray",
+      "Kevin Duh",
+      "Luis Tavarez-Arce",
+      "Paul McNamee",
+      "Sanjeev Khudanpur"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.148.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.148/"
+  },
+  {
+    "title": "Cardiverse: HarnessingLLMs for Novel Card Game Prototyping",
+    "authors": [
+      "Danrui Li",
+      "Sen Zhang",
+      "Samuel S. Sohn",
+      "Kaidong Hu",
+      "Muhammad Usman",
+      "Mubbasir Kapadia"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1511.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1511/"
+  },
+  {
+    "title": "Mind the Value-Action Gap: DoLLMs Act in Alignment with Their Values?",
+    "authors": [
+      "Hua Shen",
+      "Nicholas Clark",
+      "Tanu Mitra"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.154.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.154/"
+  },
+  {
+    "title": "EstimatingLLMConsistency: A User Baseline vs Surrogate Metrics",
+    "authors": [
+      "Xiaoyuan Wu",
+      "Weiran Lin",
+      "Omer Akgul",
+      "Lujo Bauer"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1554.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1554/"
+  },
+  {
+    "title": "BeyondWER: Probing Whisper’s Sub‐token Decoder Across Diverse Language Resource Levels",
+    "authors": [
+      "Siyu Liang",
+      "Nicolas Ballier",
+      "Gina-Anne Levow",
+      "Richard Wright"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1591.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1591/"
+  },
+  {
+    "title": "RALS: Resources and Baselines forRomanian Automatic Lexical Simplification",
+    "authors": [
+      "Fabian Anghel",
+      "Cristea Petru-Theodor",
+      "Claudiu Creangă",
+      "Sergiu Nisioi"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1603.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1603/"
+  },
+  {
+    "title": "AccessEval: Benchmarking Disability Bias in Large Language Models",
+    "authors": [
+      "Srikant Panda",
+      "Amit Agarwal",
+      "Hitesh Laxmichand Patel"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Social Impact Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1653.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1653/"
+  },
+  {
+    "title": "NormGenesis: Multicultural Dialogue Generation via Exemplar-Guided Social Norm Modeling and Violation Recovery",
+    "authors": [
+      "Minki Hong",
+      "Jangho Choi",
+      "Jihie Kim"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1715.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1715/"
+  },
+  {
+    "title": "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    "authors": [
+      "Pingjun Hong",
+      "Beiduo Chen",
+      "Siyao Peng",
+      "Marie-Catherine de Marneffe",
+      "Barbara Plank"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1728.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1728/"
+  },
+  {
+    "title": "Liaozhai through the Looking-Glass: On Paratextual Explicitation of Culture-Bound Terms in Machine Translation",
+    "authors": [
+      "Sherrie Shen",
+      "Weixuan Wang",
+      "Alexandra Birch"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1744.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1744/"
+  },
+  {
+    "title": "Aligning Text/Speech Representations from Multimodal Models withMEGBrain Activity During Listening",
+    "authors": [
+      "Padakanti Srijith",
+      "Khushbu Pahwa",
+      "Radhika Mamidi",
+      "Bapi Raju Surampudi",
+      "Manish Gupta",
+      "Subba Reddy Oota"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1748.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1748/"
+  },
+  {
+    "title": "FoREST: Frame of Reference Evaluation in Spatial Reasoning Tasks",
+    "authors": [
+      "Tanawan Premsri",
+      "Parisa Kordjamshidi"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1772.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1772/"
+  },
+  {
+    "title": "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+    "authors": [
+      "Linyang He",
+      "Qiaolin Wang",
+      "Xilin Jiang",
+      "Nima Mesgarani"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1790.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1790/"
+  },
+  {
+    "title": "Mind the Blind Spots: A Focus-Level Evaluation Framework forLLMReviews",
+    "authors": [
+      "Hyungyu Shin",
+      "Jingyu Tang",
+      "Yoonjoo Lee",
+      "Nayoung Kim",
+      "Hyunseung Lim",
+      "Ji Yong Cho",
+      "Hwajung Hong",
+      "Moontae Lee",
+      "Juho Kim"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.1805.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.1805/"
+  },
+  {
+    "title": "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+    "authors": [
+      "Ziwei Ji",
+      "Lei Yu",
+      "Yeskendir Koishekenov",
+      "Yejin Bang",
+      "Anthony Hartshorn",
+      "Alan Schelten",
+      "Cheng Zhang",
+      "Pascale Fung",
+      "Nicola Cancedda"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.187.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.187/"
+  },
+  {
+    "title": "Quantifying Language Disparities in Multilingual Large Language Models",
+    "authors": [
+      "Songbo Hu",
+      "Ivan Vulić",
+      "Anna Korhonen"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.199.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.199/"
+  },
+  {
+    "title": "Collab-Overcooked: Benchmarking and Evaluating Large Language Models as Collaborative Agents",
+    "authors": [
+      "Haochen Sun",
+      "Shuwen Zhang",
+      "Lujie Niu",
+      "Lei Ren",
+      "Hao Xu",
+      "Hao Fu",
+      "Fangkun Zhao",
+      "Caixia Yuan",
+      "Xiaojie Wang"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.249.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.249/"
+  },
+  {
+    "title": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+    "authors": [
+      "Xinyue Lou (娄馨月)",
+      "You Li (李铀)",
+      "Jinan Xu (徐金安)",
+      "Xiangyu Shi",
+      "Chi Chen",
+      "Kaiyu Huang (黄锴宇)"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.261.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.261/"
+  },
+  {
+    "title": "PAFT: Prompt-Agnostic Fine-Tuning",
+    "authors": [
+      "Chenxing Wei",
+      "Mingwen Ou",
+      "Ying He",
+      "Yao Shu",
+      "Fei Yu"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.37.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.37/"
+  },
+  {
+    "title": "PSET: a Phonetics-Semantics Evaluation Testbed",
+    "authors": [
+      "Gianluca Sperduti",
+      "Dong Nguyen"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.373.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.373/"
+  },
+  {
+    "title": "GATEAU: Selecting Influential Samples for Long Context Alignment",
+    "authors": [
+      "Shuzheng Si",
+      "Haozhe Zhao",
+      "Gang Chen",
+      "Yunshui Li",
+      "Kangyang Luo",
+      "Chuancheng Lv",
+      "Kaikai An",
+      "Fanchao Qi",
+      "Baobao Chang (常宝宝)",
+      "Maosong Sun"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.375.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.375/"
+  },
+  {
+    "title": "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+    "authors": [
+      "Shaoqing Lin",
+      "Chong Teng",
+      "Fei Li",
+      "Donghong Ji",
+      "Lizhen Qu",
+      "Zhuang Li"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.398.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.398/"
+  },
+  {
+    "title": "AbsVis – Benchmarking How Humans and Vision-Language Models “See” Abstract Concepts in Images",
+    "authors": [
+      "Tarun Tater",
+      "Diego Frassinelli",
+      "Sabine Schulte im Walde"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.417.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.417/"
+  },
+  {
+    "title": "Generative or Discriminative? Revisiting Text Classification in the Era of Transformers",
+    "authors": [
+      "Siva Rajesh Kasa",
+      "Karan Gupta",
+      "Sumegh Roychowdhury",
+      "Ashutosh Kumar",
+      "Yaswanth Biruduraju",
+      "Santhosh Kumar Kasa",
+      "Pattisapu Nikhil Priyatam",
+      "Arindam Bhattacharya",
+      "Shailendra Agarwal",
+      "Vijay Huddar"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.486.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.486/"
+  },
+  {
+    "title": "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+    "authors": [
+      "Martin Tutek",
+      "Fateme Hashemi Chaleshtori",
+      "Ana Marasović",
+      "Yonatan Belinkov"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.504.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.504/"
+  },
+  {
+    "title": "Analyzing Uncertainty ofLLM-as-a-Judge: Interval Evaluations with Conformal Prediction",
+    "authors": [
+      "Huanxin Sheng",
+      "Xinyi Liu",
+      "Hangfeng He",
+      "Jieyu Zhao",
+      "Jian Kang"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.569.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.569/"
+  },
+  {
+    "title": "LingGym: How Far AreLLMs from Thinking Like Field Linguists?",
+    "authors": [
+      "Changbing Yang",
+      "Franklin Ma",
+      "Freda Shi",
+      "Jian Zhu"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.69.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.69/"
+  },
+  {
+    "title": "ReSo: A Reward-driven Self-organizingLLM-based Multi-Agent System for Reasoning Tasks",
+    "authors": [
+      "Heng Zhou",
+      "Hejia Geng",
+      "Xiangyuan Xue",
+      "Li Kang",
+      "Yiran Qin",
+      "Zhiyong Wang",
+      "Zhenfei Yin",
+      "Lei Bai"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.808.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.808/"
+  },
+  {
+    "title": "Comparing human andLLMpoliteness strategies in free production",
+    "authors": [
+      "Haoran Zhao",
+      "Robert D. Hawkins"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.820.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.820/"
+  },
+  {
+    "title": "Prototypical Human-AICollaboration Behaviors fromLLM-Assisted Writing in the Wild",
+    "authors": [
+      "Sheshera Mysore",
+      "Debarati Das",
+      "Hancheng Cao",
+      "Bahareh Sarrafzadeh"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.852.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.852/"
+  },
+  {
+    "title": "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+    "authors": [
+      "Jingyan Shen",
+      "Jiarui Yao",
+      "Rui Yang",
+      "Yifan Sun",
+      "Feng Luo",
+      "Rui Pan",
+      "Tong Zhang",
+      "Han Zhao"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Outstanding Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.882.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.882/"
+  },
+  {
+    "title": "Autoformalization in the Wild: AssessingLLMs on Real-World Mathematical Definitions",
+    "authors": [
+      "Lan Zhang",
+      "Marco Valentino",
+      "André Freitas"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "Best Resource Paper",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.90.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.90/"
+  },
+  {
+    "title": "Who Holds the Pen? Caricature and Perspective inLLMRetellings of History",
+    "authors": [
+      "Lubna Zahan Lamia",
+      "Mabsur Fatin Bin Hossain",
+      "Md Mosaddek Khan"
+    ],
+    "abstract": "",
+    "keywords": [],
+    "tldr": "",
+    "venue": "EMNLP 2025",
+    "primary_area": "",
+    "award": "SAC Highlight Award",
+    "pdf_url": "https://aclanthology.org/2025.emnlp-main.996.pdf",
+    "html_url": "https://aclanthology.org/2025.emnlp-main.996/"
+  }
+]

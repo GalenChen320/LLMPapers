@@ -70,7 +70,7 @@ def get_output_path(config):
         suffix = "oral"
     else:
         suffix = "all"
-    return os.path.join(OUTPUT_DIR, f"{config['conference'].lower()}{config['year']}_{suffix}.jsonl")
+    return os.path.join(OUTPUT_DIR, f"{config['conference'].lower()}{config['year']}_{suffix}.json")
 
 
 def fetch_papers_for_venue(client, config):
@@ -96,10 +96,9 @@ def fetch_papers_for_venue(client, config):
         return
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    papers = [extract_metadata_openreview(note) for note in target_notes]
     with open(output_path, "w", encoding="utf-8") as f:
-        for note in target_notes:
-            meta = extract_metadata_openreview(note)
-            f.write(json.dumps(meta, ensure_ascii=False) + "\n")
+        json.dump(papers, f, ensure_ascii=False, indent=2)
 
     print(f"  Saved {len(target_notes)} papers to: {output_path}")
 
@@ -271,8 +270,7 @@ def fetch_acl_anthology(config, output_path):
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        for paper in papers:
-            f.write(json.dumps(paper, ensure_ascii=False) + "\n")
+        json.dump(papers, f, ensure_ascii=False, indent=2)
 
     print(f"  Saved {len(papers)} papers to: {output_path}")
 
