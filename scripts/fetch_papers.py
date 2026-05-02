@@ -200,7 +200,7 @@ def fetch_paper_metadata_from_anthology(paper_id, conference, year):
     title_tag = soup.find("h2", id="title")
     title = title_tag.get_text(strip=True) if title_tag else ""
 
-    abstract_tag = soup.find("div", class_="card-body")
+    abstract_tag = soup.find("div", class_="acl-abstract")
     abstract = ""
     if abstract_tag:
         abstract = abstract_tag.get_text(strip=True)

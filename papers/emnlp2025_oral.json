@@ -7,7 +7,7 @@
       "Kyle Mahowald",
       "Cory Shain"
     ],
-    "abstract": "",
+    "abstract": "Construction grammar posits that constructions, or form-meaning pairings, are acquired through experience with language (the distributional learning hypothesis). But how much information about constructions does this distribution actually contain? Corpus-based analyses provide some answers, but text alone cannot answer counterfactual questions about whatcauseda particular word to occur. This requires computable models of the distribution over strings—namely, pretrained language models (PLMs). Here, we treat a RoBERTa model as a proxy for this distribution and hypothesize that constructions will be revealed within it as patterns of statistical affinity. We support this hypothesis experimentally: many constructions are robustly distinguished, including (i) hard cases where semantically distinct constructions are superficially similar, as well as (ii) schematic constructions, whose \"slots\" can be filled by abstract word classes. Despite this success, we also provide qualitative evidence that statistical affinity alone may be insufficient to identify all constructions from text. Thus, statistical affinity is likely an important, but partial, signal available to learners.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -25,7 +25,7 @@
       "Yohan Lee",
       "Sangkeun Jung"
     ],
-    "abstract": "",
+    "abstract": "Many statistical facts are conveyed through charts. While various methods have emerged for chart understanding, chart generation typically requires users to manually input code, intent, and other parameters to obtain the desired format on chart generation tools. Recently, the advent of image-generating Large Language Models has facilitated chart generation; however, even this process often requires users to provide numerous constraints for accurate results. In this paper, we propose a loop-based framework for automatically evolving charts in a multi-agent environment. Within this framework, three distinct agents—Chart Code Generator, Chart Replier, and Chart Quality Evaluator—collaborate for iterative, user-tailored chart generation using large language models. Our approach demonstrates an improvement of up to 29.97% in performance compared to first generation, while also reducing generation time by up to 86.9% compared to manual prompt-based methods, showcasing the effectiveness of this multi-agent collaboration in enhancing the quality and efficiency of chart generation.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -50,7 +50,7 @@
       "Naoaki Okazaki",
       "Cheng-zhong Xu"
     ],
-    "abstract": "",
+    "abstract": "Mixture of Experts (MoE) offers remarkable performance and computational efficiency by selectively activating subsets of model parameters. Traditionally, MoE models use homogeneous experts, each with identical capacity. However, varying complexity in input data necessitates experts with diverse capabilities, while homogeneous MoE hinders effective expert specialization and efficient parameter utilization. In this study, we propose a novel Heterogeneous Mixture of Experts (HMoE) framework, where experts differ in size and thus possess diverse capacities. This heterogeneity allows for more specialized experts to handle varying token complexities more effectively. To address the imbalance in expert activation, we propose a novel training objective that encourages the frequent activation of smaller experts, so as to improve computational efficiency and parameter utilization. Extensive experiments demonstrate that HMoE achieves a lower loss rate with fewer activated parameters and outperforms conventional homogeneous MoE models on various pre-training evaluation benchmarks. Codes will be released upon acceptance.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -67,7 +67,7 @@
       "Zbigniew Kaleta",
       "Paweł Lewkowicz"
     ],
-    "abstract": "",
+    "abstract": "This paper explores the lemmatization of multi-word expressions (MWEs) and proper names in Polish – tasks complicated by linguistic irregularities and historical factors. Instead of using rule-based methods, we apply a machine learning approach with fine-tuned plT5 and mT5 models. We trained and validated the models on enhanced gold-standard data from the 2019 PolEval task and evaluated the impact of additional fine-tuning on a silver-standard dataset derived from Wikipedia. Two setups were tested: one without context, and one using left-side context of the target MWE. Our best model achieved 86.23% AccCS (Accuracy Case-Sensitive), 89.43% AccCI (Accuracy Case-Insensitive), and a combined score of 88.79%, setting a new state-of-the-art for Polish MWE and named entity lemmatization, as confirmed by the PolEval maintainers. We also evaluated optimization and quantization techniques to reduce model size and inference time with minimal quality loss.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -86,7 +86,7 @@
       "Han Hu",
       "Hao Wang"
     ],
-    "abstract": "",
+    "abstract": "The formation and circulation of ideas in philosophy have profound implications for understanding philosophical dynamism–enabling us to identify seminal texts, delineate intellectual traditions, and track changing conventions in the act of philosophizing. However, traditional analyses of these issues often depend on manual reading and subjective interpretation, constrained by human cognitive limits. We introduce InterIDEAS, a pioneering dataset designed to bridge philosophy, literary studies, and natural language processing (NLP). By merging theories of intertextuality from literary studies with bibliometric techniques and recent LLMs, InterIDEAS enables both quantitative and qualitative analysis of the intellectual, social, and historical relations embedded within authentic philosophical texts. This dataset not only assists the study of philosophy but also contributes to the development of language models by providing a training corpus that challenges and enhances their interpretative capacity.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -105,7 +105,7 @@
       "Masha Fedzechkina",
       "Natalie Schluter"
     ],
-    "abstract": "",
+    "abstract": "We introduce a set of training-free ABX-style discrimination tasks to evaluate how multilingual language models represent language identity (form) and semantic content (meaning). Inspired from speech processing, these zero-shot tasks measure whether minimal differences in representation can be reliably detected. This offers a flexible and interpretable alternative to probing. Applied to XLM-R (Conneau et al, 2020) across pretraining checkpoints and layers, we find that language discrimination declines over training and becomes concentrated in lower layers, while meaning discrimination strengthens over time and stabilizes in deeper layers. We then explore probing tasks, showing some alignment between our metrics and linguistic learning performance.Our results position ABX tasks as a lightweight framework for analyzing the structure of multilingual representations.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -124,7 +124,7 @@
       "Maël Lebreton",
       "Lucas Dixon"
     ],
-    "abstract": "",
+    "abstract": "As large language models (LLMs) are increasingly used to model and augment collective decision-making, it is critical to examine their alignment with human social reasoning. We present an empirical framework for assessing collective alignment, in contrast to prior work on the individual level. Using the Lost at Sea social psychology task, we conduct a large-scale online experiment (N=748), randomly assigning groups to leader elections with either visible demographic attributes (e.g. name, gender) or pseudonymous aliases. We then simulate matched LLM groups conditioned on the human data, benchmarking Gemini 2.5, GPT-4.1, Claude Haiku 3.5, and Gemma 3. LLM behaviors diverge: some mirror human biases; others mask these biases and attempt to compensate for them. We empirically demonstrate that human-AI alignment in collective reasoning depends on context, cues, and model-specific inductive biases. Understanding how LLMs align with collective human behavior is critical to advancing socially-aligned AI, and demands dynamic benchmarks that capture the complexities of collective reasoning.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -141,7 +141,7 @@
       "Ljiljana Dolamic",
       "Fabio Rinaldi"
     ],
-    "abstract": "",
+    "abstract": "Dialectal data are characterized by linguistic variation that appears small to humans but has a significant impact on the performance of models. This dialect gap has been related to various factors (e.g., data size, economic and social factors) whose impact, however, turns out to be inconsistent. In this work, we investigate factors impacting the model performance more directly: we correlate Tokenization Parity (TP) and Information Parity (IP), as measures of representational biases in pre-trained multilingual models, with the downstream performance. We compare state-of-the-art decoder-only LLMs with encoder-based models across three tasks: dialect classification, topic classification, and extractive question answering, controlling for varying scripts (Latin vs. non-Latin) and resource availability (high vs. low). Our analysis reveals that TP is a better predictor of the performance on tasks reliant on syntactic and morphological cues (e.g., extractive QA), while IP better predicts performance in semantic tasks (e.g., topic classification). Complementary analyses, including tokenizer behavior, vocabulary coverage, and qualitative insights, reveal that the language support claims of LLMs often might mask deeper mismatches at the script or token level.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -159,7 +159,7 @@
       "Noah A. Smith",
       "Hannaneh Hajishirzi"
     ],
-    "abstract": "",
+    "abstract": "Language models are trained mainly on massive text data from the Internet, and it becomes increasingly important to understand this data source. Exact-match search engines enable searching in large text corpora – counting string appearances and retrieving the enclosing documents – yet the high storage overhead hinders their application on Internet-scale data. We present Infini-gram mini, an efficient and scalable system that can make petabyte-level text corpora searchable. Based on the FM-index data structure (Ferragina and Manzini, 2000), which simultaneously indexes and compresses text, our system creates indexes with size only 44% of the corpus. Infini-gram mini greatly improves upon the best existing implementation of FM-index in terms of indexing speed (18×) and memory use during both indexing (3.2×reduction) and querying (down to a negligible amount). We index 83TB of Internet text in 99 days with a single 128-core CPU node (or 19 hours if using 137 such nodes). We show one important use case of Infini-gram mini in a large-scale analysis of benchmark contamination. We find several core LM evaluation benchmarks to be heavily contaminated in Internet crawls (up to 74.2% in GSM8K), which could lead to overestimating the capabilities of language models if trained on such data. We host a benchmark contamination bulletin to share the contamination rate of many core and community-contributed benchmarks. We also release a web interface and an API endpoint to serve general search queries on Infini-gram mini indexes.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -175,7 +175,7 @@
       "Christopher Potts",
       "Kyle Mahowald"
     ],
-    "abstract": "",
+    "abstract": "Language Models (LMs) have emerged as powerful sources of evidence for linguists seeking to develop theories of syntax. In this paper, we argue that causal interpretability methods, applied to LMs, can greatly enhance the value of such evidence by helping us characterize the abstract mechanisms that LMs learn to use. Our empirical focus is a set of English filler–gap dependency constructions (e.g., questions, relative clauses). Linguistic theories largely agree that these constructions share many properties. Using experiments based in Distributed Interchange Interventions, we show that LMs converge on similar abstract analyses of these constructions. These analyses also reveal previously overlooked factors – relating to frequency, filler type, and surrounding context – that could motivate changes to standard linguistic theory. Overall, these results suggest that mechanistic, internal analyses of LMs can push linguistic theory forward.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -199,7 +199,7 @@
       "Qifeng Bai",
       "Yu Rong"
     ],
-    "abstract": "",
+    "abstract": "Reasoning-based large language models have excelled in mathematics and programming, yet their potential in knowledge-intensive medical question answering remains underexplored and insufficiently validated in clinical contexts. To bridge this gap, we introduceReasonMed, the largest medical reasoning dataset to date, comprising 370k high-quality examples distilled from 1.75 million initial reasoning paths generated by complementary LLMs and curated through a cost-efficient easy-medium-difficult (EMD) pipeline. ReasonMed is built through a multi-agent generation, verification, and refinement process, in which anError Refinerimproves reasoning paths by correcting error-prone steps identified by a verifier. Using ReasonMed, we investigate effective strategies for training medical reasoning models and find that integrating detailed CoT reasoning with concise answer summaries yields the most robust fine-tuning results. Models trained on ReasonMed set a new benchmark: ReasonMed-7B surpasses the prior best sub-10B models by 4.17% and even exceeds LLaMA3.1-70B on PubMedQA by 4.60%. When scaled to ReasonMed-14B, it remains highly competitive, underscoring consistent scaling potential. The codes and datasets are available athttps://github.com/YuSun-Work/ReasonMed.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -215,7 +215,7 @@
       "Andreas Östling",
       "Måns Magnusson"
     ],
-    "abstract": "",
+    "abstract": "Legal citation detection in court judgments underpins reliable precedent mapping, citation analytics, and document retrieval. Extracting references to legislation and case law in the United Kingdom is especially challenging: citation styles have evolved over centuries, and judgments routinely cite foreign or historical authorities. We conduct the first systematic comparison of three modelling paradigms on this task using the Cambridge Law Corpus: (i) rule‐based regular expressions; (ii) transformer-based encoders (BERT, RoBERTa, LEGAL‐BERT, ModernBERT); and (iii) large language models (GPT‐4.1). We produced a gold‐standard high-quality corpus of 190 court judgments containing 45,179 fine-grained annotations for UK and non-UK legislation and case references. ModernBERT achieves a macro-averaged F1 of 93.3%, only marginally ahead of the other encoder-only models, yet significantly outperforming the strongest regular-expression baseline (35.42% F1) and GPT-4.1 (76.57% F1).",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -232,7 +232,7 @@
       "Daniel Ruffinelli",
       "Simone Paolo Ponzetto"
     ],
-    "abstract": "",
+    "abstract": "In this paper, we study the surprising impact that truncating text embeddings has on downstream performance. We consistently observe across 6 state-of-the-art text encoders and 26 downstream tasks, that randomly removing up to 50% of embedding dimensions results in only a minor drop in performance, less than 10%, in retrieval and classification tasks. Given the benefits of using smaller-sized embeddings, as well as the potential insights about text encoding, we study this phenomenon and find that, contrary to what is suggested in prior work, this is not the result of an ineffective use of representation space. Instead, we find that a large number of uniformly distributed dimensions actually cause an increase in performance when removed. This would explain why, on average, removing a large number of embedding dimensions results in a marginal drop in performance. We make similar observations when truncating the embeddings used by large language models to make next-token predictions on generative tasks, suggesting that this phenomenon is not isolated to classification or retrieval tasks.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -253,7 +253,7 @@
       "Salman Khan",
       "Hisham Cholakkal"
     ],
-    "abstract": "",
+    "abstract": "Fine-grained understanding and species-specific, multimodal question answering are vital for advancing biodiversity conservation and ecological monitoring. However, existing multimodal large language models (MM-LLMs) face challenges when it comes to specialized topics like avian species, making it harder to provide accurate and contextually relevant information in these areas. To address this limitation, we introduce the **MAviS-Dataset**, a large-scale multimodal avian species dataset that integrates image, audio, and text modalities for over 1,000 bird species, comprising both pretraining and instruction-tuning subsets enriched with structured question–answer pairs. Building on the MAviS-Dataset, we introduce **MAviS-Chat**, a multimodal LLM that supports audio, vision, and text designed for fine-grained species understanding, multimodal question answering, and scene-specific description generation. Finally, for quantitative evaluation, we present **MAviS-Bench**, a benchmark of over 25,000 Q&A pairs designed to assess avian species-specific perceptual and reasoning abilities across modalities. Experimental results show that MAviS-Chat outperforms the baseline MiniCPM-o-2.6 by a large margin, achieving state-of-the-art open-source results and demonstrating the effectiveness of our instruction-tuned MAviS-Dataset. Our findings highlight the necessity of domain-adaptive MM-LLMs for ecological applications. Our code, training data, evaluation benchmark, and models are available at https://github.com/yevheniia-uv/MAviS.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -276,7 +276,7 @@
       "Paul McNamee",
       "Sanjeev Khudanpur"
     ],
-    "abstract": "",
+    "abstract": "Encoder-decoder models have achieved remarkable success in speech and text tasks, yet efficiently adapting these models to diverse uni/multi-modal scenarios remains an open challenge. In this paper, we propose Whisper-UT, a unified and efficient framework that leverages lightweight adapters to enable seamless adaptation across tasks, including a multi-modal machine translation (MMT) task that explicitly conditions translation on both speech and source language text inputs. By incorporating ASR hypotheses or ground-truth transcripts as prompts, this approach not only enables the system to process both modalities simultaneously but also enhances speech translation (ST) performance through a 2-stage decoding strategy. We demonstrate our methods using the Whisper model, though in principle they are general and could be applied to similar multitask models. We highlight the effectiveness of cross-modal and cross-task fine-tuning, which improves performance without requiring 3-way parallel data. Our results underscore the flexibility, efficiency, and general applicability of the proposed framework for multi-modal translation.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -295,7 +295,7 @@
       "Muhammad Usman",
       "Mubbasir Kapadia"
     ],
-    "abstract": "",
+    "abstract": "The prototyping of computer games, particularly card games, requires extensive human effort in creative ideation and gameplay evaluation. Recent advances in Large Language Models (LLMs) offer opportunities to automate and streamline these processes. However, it remains challenging for LLMs to design novel game mechanics beyond existing databases, generate consistent gameplay environments, and develop scalable gameplay AI for large-scale evaluations. This paper addresses these challenges by introducing a comprehensive automated card game prototyping framework. The approach highlights a graph-based indexing method for generating novel game variations, an LLM-driven system for consistent game code generation validated by gameplay records, and a gameplay AI constructing method that uses an ensemble of LLM-generated action-value functions optimized through self-play. These contributions aim to accelerate card game prototyping, reduce human labor, and lower barriers to entry for game developers.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -311,7 +311,7 @@
       "Nicholas Clark",
       "Tanu Mitra"
     ],
-    "abstract": "",
+    "abstract": "Existing research assesses LLMs’ values by analyzing their stated inclinations, overlooking potential discrepancies between stated values and actions—termed the “Value-Action Gap.” This study introduces ValueActionLens, a framework to evaluate the alignment between LLMs’ stated values and their value-informed actions. The framework includes a dataset of 14.8k value-informed actions across 12 cultures and 11 social topics, along with two tasks measuring alignment through three metrics. Experiments show substantial misalignment between LLM-generated value statements and their actions, with significant variations across scenarios and models. Misalignments reveal potential harms, highlighting risks in relying solely on stated values to predict behavior. The findings stress the need for context-aware evaluations of LLM values and the value-action gaps.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -328,7 +328,7 @@
       "Omer Akgul",
       "Lujo Bauer"
     ],
-    "abstract": "",
+    "abstract": "Large language models (LLMs) are prone to hallucinations and sensitive to prompt perturbations, often resulting in inconsistent or unreliable generated text. Different methods have been proposed to mitigate such hallucinations and fragility, one of which is to measure the consistency of LLM responses–the model’s confidence in the response or likelihood of generating a similar response when resampled. In previous work, measuring LLM response consistency often relied on calculating the probability of a response appearing within a pool of resampled responses, analyzing internal states, or evaluating logits of resopnses. However, it was not clear how well these approaches approximated users’ perceptions of consistency of LLM responses. To find out, we performed a user study (n=2,976) demonstrating that current methods for measuring LLM response consistency typically do not align well with humans’ perceptions of LLM consistency. We propose a logit-based ensemble method for estimating LLM consistency and show that our method matches the performance of the best-performing existing metric in estimating human ratings of LLM consistency. Our results suggest that methods for estimating LLM consistency without human evaluation are sufficiently imperfect to warrant broader use of evaluation with human input; this would avoid misjudging the adequacy of models because of the imperfections of automated consistency metrics.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -345,7 +345,7 @@
       "Gina-Anne Levow",
       "Richard Wright"
     ],
-    "abstract": "",
+    "abstract": "While large multilingual automatic speech recognition (ASR) models achieve remarkable performance, the internal mechanisms of the end-to-end pipeline, particularly concerning fairness and efficacy across languages, remain underexplored. This paper introduces a fine-grained analysis of Whisper’s multilingual decoder, examining its sub-token hypotheses during transcription across languages with various resource levels. Our method traces the beam search path, capturing sub-token guesses and their associated probabilities. Results reveal that higher resource languages benefit from higher likelihood of the correct token being top-ranked, greater confidence, lower predictive entropy, and more diverse alternative candidates. Lower resource languages fare worse on these metrics, but also exhibit distinct clustering patterns in sub-token usage sometimes influenced by typology in our PCA and t-SNE analysis. This sub-token probing uncovers systematic decoding disparities masked by aggregate error rates and points towards targeted interventions to ameliorate the imbalanced development of speech technology.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -362,7 +362,7 @@
       "Claudiu Creangă",
       "Sergiu Nisioi"
     ],
-    "abstract": "",
+    "abstract": "We introduce the first dataset that jointly covers both lexical complexity prediction (LCP) annotations and lexical simplification (LS) for Romanian, along with a comparison of lexical simplification approaches. We propose a methodology for ordering simplification suggestions using a pairwise ranking approximation method, arranging candidates from simple to complex based on a separate set of human judgments. In addition, we provide human lexical complexity annotations for 3,921 word samples in context. Finally, we explore several novel pipelines for complexity prediction and simplification and present the first text simplification system for Romanian.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -378,7 +378,7 @@
       "Amit Agarwal",
       "Hitesh Laxmichand Patel"
     ],
-    "abstract": "",
+    "abstract": "Large Language Models (LLMs) are increasingly deployed across diverse domains but often exhibit disparities in how they handle real life queries. To systematically investigate these effects with various disability context, we introduce AccessEval, a large-scale benchmark evaluating total 21 close & open source LLMs across six real-world domains and nine disability types using paired Neutral and Disability-Aware Queries. We evaluated model outputs with metrics for factual accuracy, sentiment, and social perception.Our analysis reveals that responses to disability-aware queries tend to have higher factual error, more negative tone, and increased stereotyping with social perception compared to neutral queries. These effects show notable variation by domain and disability type. Disabilities affecting hearing, speech and mobility are disproportionately impacted. These disparities reveal persistent forms of ableism, highlighting the need for more comprehensive and nuanced assessment.We further argue that framing bias in terms of model performance within real-world decision making helps to better link model behaviors to the potential harms users may face. This approach guides the development of more effective and tailored fairness interventions. AccessEval, therefore, serves as a crucial tool for advancing equitable and inclusive language technologies.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -394,7 +394,7 @@
       "Jangho Choi",
       "Jihie Kim"
     ],
-    "abstract": "",
+    "abstract": "Social norms govern culturally appropriate behavior in communication, enabling dialogue systems to produce responses that are not only coherent but also socially acceptable. We present NormGenesis, a multicultural framework for generating and annotating socially grounded dialogues across English, Chinese, and Korean. To model the dynamics of social interaction beyond static norm classification, we propose a novel dialogue type, Violation-to-Resolution (V2R), which models the progression of conversations following norm violations through recognition and socially appropriate repair. To improve pragmatic consistency in underrepresented languages, we implement an exemplar-based iterative refinement early in the dialogue synthesis process. This design introduces alignment with linguistic, emotional, and sociocultural expectations before full dialogue generation begins. Using this framework, we construct a dataset of 10,800 multi-turn dialogues annotated at the turn level for norm adherence, speaker intent, and emotional response. Human and LLM-based evaluations demonstrate that NormGenesis significantly outperforms existing datasets in refinement quality, dialogue naturalness, and generalization performance. We show that models trained on our V2R-augmented data exhibit improved pragmatic competence in ethically sensitive contexts. Our work establishes a new benchmark for culturally adaptive dialogue modeling and provides a scalable methodology for norm-aware generation across linguistically and culturally diverse languages.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -412,7 +412,7 @@
       "Marie-Catherine de Marneffe",
       "Barbara Plank"
     ],
-    "abstract": "",
+    "abstract": "There is increasing evidence of Human Label Variation (HLV) in Natural Language Inference (NLI), where annotators assign different labels to the same premise-hypothesis pair. However, *within-label variation* — cases where annotators agree on the same label but provide divergent reasoning — poses an additional and mostly overlooked challenge. Several NLI datasets contain highlighted words in the NLI item as explanations, but the same spans on the NLI item can be highlighted for different reasons, as evidenced by free-text explanations, which offer a window into annotators’ reasoning. To systematically understand this problem and gain insight into the rationales behind NLI labels, we introduce LiTEx, a linguistically-informed taxonomy for categorizing free-text explanations in English. Using this taxonomy, we annotate a subset of the e-SNLI dataset, validate the taxonomy’s reliability, and analyze how it aligns with NLI labels, highlights, and explanations. We further assess the taxonomy’s usefulness in explanation generation, demonstrating that conditioning generation on LiTEx yields explanations that are linguistically closer to human explanations than those generated using only labels or highlights. Our approach thus not only captures within-label variation but also shows how taxonomy-guided generation for reasoning can bridge the gap between human and model explanations more effectively than existing strategies.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -428,7 +428,7 @@
       "Weixuan Wang",
       "Alexandra Birch"
     ],
-    "abstract": "",
+    "abstract": "The faithful transfer of contextually-embedded meaning continues to challenge contemporary machine translation (MT), particularly in the rendering of culture-bound terms—expressions or concepts rooted in specific languages or cultures, resisting direct linguistic transfer. Existing computational approaches to explicitating these terms have focused exclusively on in-text solutions, overlooking paratextual apparatus in the footnotes and endnotes employed by professional translators. In this paper, we formalize Genette’s (1987) theory of paratexts from literary and translation studies to introduce the task of paratextual explicitation for MT. We construct a dataset of 560 expert-aligned paratexts from four English translations of the classical Chinese short story collection Liaozhai and evaluate LLMs with and without reasoning traces on choice and content of explicitation. Experiments across intrinsic prompting and agentic retrieval methods establish the difficulty of this task, with human evaluation showing that LLM-generated paratexts improve audience comprehension, though remain considerably less effective than translator-authored ones. Beyond model performance, statistical analysis reveals that even professional translators vary widely in their use of paratexts, suggesting that cultural mediation is inherently open-ended rather than prescriptive. Our findings demonstrate the potential of paratextual explicitation in advancing MT beyond linguistic equivalence, with promising extensions to monolingual explanation and personalized adaptation.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -447,7 +447,7 @@
       "Manish Gupta",
       "Subba Reddy Oota"
     ],
-    "abstract": "",
+    "abstract": "Although speech language models are expected to align well with brain language processing during speech comprehension, recent studies have found that they fail to capture brain-relevant semantics beyond low-level features. Surprisingly, text-based language models exhibit stronger alignment with brain language regions, as they better capture brain-relevant semantics. However, no prior work has examined the alignment effectiveness of text/speech representations from multimodal models. This raises several key questions: Can speech embeddings from such multimodal models capture brain-relevant semantics through cross-modal interactions? Which modality can take advantage of this synergistic multimodal understanding to improve alignment with brain language processing? Can text/speech representations from such multimodal models outperform unimodal models? To address these questions, we systematically analyze multiple multimodal models, extracting both text- and speech-based representations to assess their alignment with MEG brain recordings during naturalistic story listening. We find that text embeddings from both multimodal and unimodal models significantly outperform speech embeddings from these models. Specifically, multimodal text embeddings exhibit a peak around 200 ms, suggesting that they benefit from speech embeddings, with heightened activity during this time period. However, speech embeddings from these multimodal models still show a similar alignment compared to their unimodal counterparts, suggesting that they do not gain meaningful semantic benefits over text-based representations. These results highlight an asymmetry in cross-modal knowledge transfer, where the text modality benefits more from speech information, but not vice versa.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -462,7 +462,7 @@
       "Tanawan Premsri",
       "Parisa Kordjamshidi"
     ],
-    "abstract": "",
+    "abstract": "Spatial reasoning is a fundamental aspect of human intelligence. One key concept in spatial cognition is the Frame of Reference (FoR), which identifies the perspective of spatial expressions. Despite its significance, FoR has received limited attention in AI models that need spatial intelligence. There is a lack of dedicated benchmarks and in-depth evaluation of large language models (LLMs) in this area. To address this issue, we introduce the Frame of Reference Evaluation in Spatial Reasoning Tasks (FoREST) benchmark, designed to assess FoR comprehension in LLMs. We evaluate LLMs on answering questions that require FoR comprehension and layout generation in text-to-image models using FoREST. Our results reveal a notable performance gap across different FoR classes in various LLMs, affecting their ability to generate accurate layouts for text-to-image generation. This highlights critical shortcomings in FoR comprehension. To improve FoR understanding, we propose Spatial-Guided prompting, which improves LLMs’ ability to extract essential spatial concepts. Our proposed method improves overall performance across spatial reasoning tasks.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -479,7 +479,7 @@
       "Xilin Jiang",
       "Nima Mesgarani"
     ],
-    "abstract": "",
+    "abstract": "Transformer-based speech language models (SLMs) have significantly improved neural speech recognition and understanding. While existing research has examined how well SLMs encode shallow acoustic and phonetic features, the extent to which SLMs encode nuanced syntactic and conceptual features remains unclear. By drawing parallels with linguistic competence assessments for large language models, this study is the first to systematically evaluate the presence of contextual syntactic and semantic features across SLMs for self-supervised learning (S3M), automatic speech recognition (ASR), speech compression (codec), and as the encoder for auditory large language models (AudioLLMs). Through minimal pair designs and diagnostic feature analysis across 71 tasks spanning diverse linguistic levels, our layer-wise and time-resolved analysis uncovers that 1) all speech encode grammatical features more robustly than conceptual ones. 2) Despite never seeing text, S3M match or surpass ASR encoders on every linguistic level, demonstrating that rich grammatical and even conceptual knowledge can arise purely from audio. 3) S3M representations peak mid-network and then crash in the final layers, whereas ASR and AudioLLM encoders maintain or improve, reflecting how pre-training objectives reshape late-layer content. 4) Temporal probing further shows that S3Ms encode grammatical cues 500 ms before a word begins, whereas AudioLLMs distribute evidence more evenly—indicating that objectives shape not only where but also when linguistic information is most salient. Together, these findings establish the first large-scale map of contextual syntax and semantics in speech models and highlight both the promise and the limits of current SLM training paradigms.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -501,7 +501,7 @@
       "Moontae Lee",
       "Juho Kim"
     ],
-    "abstract": "",
+    "abstract": "Peer review underpins scientific progress, but it is increasingly strained by reviewer shortages and growing workloads. Large Language Models (LLMs) can automatically draft reviews now, but determining whether LLM-generated reviews are trustworthy requires systematic evaluation. Researchers have evaluated LLM reviews at either surface-level (e.g., BLEU and ROUGE) or content-level (e.g., specificity and factual accuracy). Yet it remains uncertain whether LLM-generated reviews attend to the same critical facets that human experts weigh—the strengths and weaknesses that ultimately drive an accept-or-reject decision. We introduce a focus-level evaluation framework that operationalizes the focus as a normalized distribution of attention across predefined facets in paper reviews. Based on the framework, we developed an automatic focus-level evaluation pipeline based on two sets of facets: target (e.g., problem, method, and experiment) and aspect (e.g., validity, clarity, and novelty), leveraging 676 paper reviews from OpenReview that consists of 3,657 strengths and weaknesses identified from human experts. The comparison of focus distributions between LLMs and human experts showed that the off-the-shelf LLMs consistently have a more biased focus towards examining technical validity while significantly overlooking novelty assessment when criticizing papers.Dataset: https://figshare.com/s/d5adf26c802527dd0f62",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -523,7 +523,7 @@
       "Pascale Fung",
       "Nicola Cancedda"
     ],
-    "abstract": "",
+    "abstract": "LLMs often adopt an assertive language style also when making false claims. Such ”overconfident hallucinations” mislead users and erode trust. Achieving the ability to express in language the actual degree of uncertainty around a claim is therefore of great importance. We find that ”verbal uncertainty” is governed by a single linear feature in the representation space of LLMs, and shows that this has only moderate correlation with the actual ”semantic uncertainty” of the model. We apply this insight and show that (1) the mismatch between semantic and verbal uncertainty is a better predictor of hallucinations than semantic uncertainty alone and (2) we can intervene on verbal uncertainty at inference time and reduce confident hallucinations on short-form answers, achieving an average relative reduction of ~30%.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -539,7 +539,7 @@
       "Ivan Vulić",
       "Anna Korhonen"
     ],
-    "abstract": "",
+    "abstract": "Results reported in large-scale multilingual evaluations are often fragmented and confounded by factors such as target languages, differences in experimental setups, and model choices. We propose a framework that disentangles these confounding variables and introduces three interpretable metrics—the performance realisation ratio, its coefficient of variation, and language potential—enabling a finer-grained and more insightful quantification of actual performance disparities across both (i) models and (ii) languages. Through a case study of 13 model variants on 11 multilingual datasets, we demonstrate that our framework provides a more reliable measurement of model performance and language disparities, particularly for low-resource languages, which have so far proven challenging to evaluate. Importantly, our results reveal that higher overall model performance does not necessarily imply greater fairness across languages.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -561,7 +561,7 @@
       "Caixia Yuan",
       "Xiaojie Wang"
     ],
-    "abstract": "",
+    "abstract": "Large Language Models (LLMs) based agent systems have made great strides in real-world applications beyond traditional NLP tasks. This paper proposes a new LLM-based Multi-Agent System (LLM-MAS) benchmark, Collab-Overcooked, built on the popular Overcooked-AI game with more applicable and challenging tasks in interactive environments. Collab-Overcooked extends existing benchmarks in two novel ways. First, it provides a multi-agent framework supporting diverse tasks and objectives and encourages collaboration through natural language communication. Second, it introduces a spectrum of process-oriented evaluation metrics to assess the fine-grained collaboration capabilities of different LLM agents, a dimension often overlooked in prior work. We conduct extensive experiments with 13 popular LLMs and show that, while the LLMs exhibit a strong ability in goal interpretation, there are significant shortcomings in active collaboration and continuous adaptation, which are critical for efficiently fulfilling complex tasks. Notably, we highlight the strengths and weaknesses of LLM-MAS and provide insights for improving and evaluating LLM-MAS on a unified and open-source benchmark. The environments, 30 open-ended tasks, and the evaluation package are publicly available at https://github.com/YusaeMeow/Collab-Overcooked.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -580,7 +580,7 @@
       "Chi Chen",
       "Kaiyu Huang (黄锴宇)"
     ],
-    "abstract": "",
+    "abstract": "The rapid development of Multimodal Large Reasoning Models (MLRMs) has demonstrated broad application potential, yet their safety and reliability remain critical concerns that require systematic exploration. To address this gap, we conduct a comprehensive and systematic safety evaluation of 13 MLRMs across 5 benchmarks and unveil prevalent safety degradation phenomena in most advanced models. Moreover, our analysis reveals distinct safety patterns across different benchmarks: significant safety degradation is observed across jailbreak robustness benchmarks, whereas safety-awareness benchmarks demonstrate less pronounced degradation. In particular, the long thought process in some scenarios even enhances safety performance. Therefore, it is a potential approach to address safety issues in MLRMs by leveraging the intrinsic reasoning capabilities of the model to detect unsafe intent. To operationalize this insight, we construct a multimodal tuning dataset that incorporates a safety-oriented thought process. Experimental results from fine-tuning existing MLRMs with this dataset effectively enhance the safety on both jailbreak robustness and safety-awareness benchmarks. This study provides a new perspective for developing safe MLRMs.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -598,7 +598,7 @@
       "Yao Shu",
       "Fei Yu"
     ],
-    "abstract": "",
+    "abstract": "Fine-tuning large language models (LLMs) often causes overfitting to specific prompt wording, where minor phrasing variations drastically reduce performance. To address this, we propose Prompt-Agnostic Fine-Tuning (PAFT), a method that enhances robustness through dynamic prompt variation during training. PAFT first generates diverse synthetic prompts, then continuously samples from this set to construct training instances, forcing models to learn fundamental task principles rather than surface-level patterns. Across systematic evaluations using both supervised fine-tuning (SFT) and reinforcement learning fine-tuning (RLFT), PAFT consistently demonstrates improved performance on benchmarks for question answering, mathematical reasoning, and tool use. It achieves 7% higher generalization accuracy on unseen prompts than standard methods with similar training efficiency. Notably, models trained with PAFT attain 3.2× faster inference speeds due to reduced prompt sensitivity. Ablation studies further validate effectiveness of PAFT, while theoretical analysis reveals that PAFT can effectively enhance the cross-domain generalization ability of LLM.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -613,7 +613,7 @@
       "Gianluca Sperduti",
       "Dong Nguyen"
     ],
-    "abstract": "",
+    "abstract": "We introduce the Phonetics-Semantics Evaluation Testbed (PSET), a new English-based testbed to evaluate phonetic embeddings. Our testbed is built on the assumption that phonetic embeddings should always prioritize phonetics over semantics, and it therefore leverages homophones and synonyms.We use PSET to test three phonetic embedding models: articulatory embeddings, Phoneme2Vec, and XPhoneBERT. The phonetic-based embeddings solve the task with varying degrees of success, with Phoneme2Vec performing the best.We also test five recent LLMs, GPT-4o, Gemini 2.5 Flash, Llama 3.1-8B, OLMo-7B and OLMo 2-7B. Gemini 2.5 Flash performs better than the other models. With this testbed, we hope to advance the development and evaluation of phonetic embedding models.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -636,7 +636,7 @@
       "Baobao Chang (常宝宝)",
       "Maosong Sun"
     ],
-    "abstract": "",
+    "abstract": "Aligning large language models to handle instructions with extremely long contexts has yet to be fully investigated. Previous studies have attempted to scale up the available data volume by synthesizing long instruction-following samples, as constructing such a dataset tends to be challenging for annotators. However, a lack of a well-defined strategy for ensuring data quality may introduce low-quality samples and restrict the model’s performance. Thus, we propose GATEAU, a novel framework to address the unique challenge of long context alignment by identifying the influential samples enriched with long-range dependency relations. Specifically, GATEAU measures the long-range dependencies from two essential aspects: the difficulty of generating target responses due to the long-range dependencies, and the difficulty of understanding long inputs due to such dependencies. Comprehensive experiments indicate that GATEAU effectively identifies influential samples and the model trained on these selected samples exhibits better instruction-following and long-context understanding capabilities.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -655,7 +655,7 @@
       "Lizhen Qu",
       "Zhuang Li"
     ],
-    "abstract": "",
+    "abstract": "Vision-Language Models (VLMs) generate discourse-level, multi-sentence visual descriptions, challenging text scene graph parsers built for single-sentence caption-to-graph mapping. Current approaches typically merge sentence-level parsing outputs for discourse input, often missing phenomena like cross-sentence coreference, resulting in fragmented graphs and degraded downstream VLM task performance. We introduce a new task, Discourse-level text Scene Graph parsing (DiscoSG), and release DiscoSG-DS, a dataset of 400 expert-annotated and 8,430 synthesised multi-sentence caption-graph pairs. Each caption averages 9 sentences, and each graph contains at least 3×more triples than those in existing datasets. Fine-tuning GPT-4o on DiscoSG-DS yields over 40% higher SPICE than the strongest sentence-merging baseline. However, its high inference cost and licensing restrict open-source use, and smaller fine-tuned open-source models (e.g., Flan-T5) perform poorly on dense graph generation. To bridge this gap, we propose DiscoSG-Refiner, which drafts a base graph using a seed parser and iteratively refines it with a second model, improving robustness for complex graph generation. Using two small fine-tuned Flan-T5-Base models, DiscoSG-Refiner improves SPICE by ~30% over the baseline while achieving86×faster inference than GPT-4o. It also delivers consistent gains on downstream VLM tasks, including discourse-level caption evaluation and hallucination detection, outperforming alternative parsers. Code and data are available at https://github.com/ShaoqLin/DiscoSG .",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -671,7 +671,7 @@
       "Diego Frassinelli",
       "Sabine Schulte im Walde"
     ],
-    "abstract": "",
+    "abstract": "Abstract concepts like mercy and peace often lack clear visual grounding, and thus challenge humans and models to provide suitable image representations. To address this challenge, we introduce AbsVis – a dataset of 675 images annotated with 14,175 concept–explanation attributions from humans and two Vision-Language Models (VLMs: Qwen and LLaVA), where each concept is accompanied by a textual explanation. We compare human and VLM attributions in terms of diversity, abstractness, and alignment, and find that humans attribute more varied concepts. AbsVis also includes 2,680 human preference judgments evaluating the quality of a subset of these annotations, showing that overlapping concepts (attributed by both humans and VLMs) are most preferred. Explanations clarify and strengthen the perceived attributions, both from humans and VLMs. Explanations clarify and strengthen the perceived attributions, both from human and VLMs. Finally, we show that VLMs can approximate human preferences and use them to fine-tune VLMs via Direct Preference Optimization (DPO), yielding improved alignments with preferred concept–explanation pairs.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -694,7 +694,7 @@
       "Shailendra Agarwal",
       "Vijay Huddar"
     ],
-    "abstract": "",
+    "abstract": "*The comparison between discriminative and generative classifiers has intrigued researchers since [Efron (1975)’s](https://www.jstor.org/stable/2285453) seminal analysis of logistic regression versus discriminant analysis. While early theoretical work established that generative classifiers exhibit lower sample complexity but higher asymptotic error in simple linear settings, these trade-offs remain unexplored in the transformer era. We present the first comprehensive evaluation of modern generative and discriminative architectures—Auto-regressive, Masked Language Modeling, Discrete Diffusion, and Encoders for text classification. Our study reveals that the classical “two regimes” phenomenon manifests distinctly across different architectures and training paradigms. Beyond accuracy, we analyze sample efficiency, calibration, noise robustness, and ordinality across diverse scenarios. Our findings offer practical guidance for selecting the most suitable modeling approach based on real-world constraints such as latency and data limitations.*",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -711,7 +711,7 @@
       "Ana Marasović",
       "Yonatan Belinkov"
     ],
-    "abstract": "",
+    "abstract": "When prompted to think step-by-step, language models (LMs) produce a chain of thought (CoT), a sequence of reasoning steps that the model supposedly used to produce its prediction. Despite much work on CoT prompting, it is unclear if reasoning verbalized in a CoT is faithful to the models’ parametric beliefs. We introduce a framework for measuring parametric faithfulness of generated reasoning and propose Faithfulness by Unlearning Reasoning steps (FUR), an instance of this framework. FUR erases information contained in reasoning steps from model parameters and measures faithfulness as the resulting effect on the model’s prediction. Our experiments with four LMs and five multi-choice question answering (MCQA) datasets show that FUR is frequently able to precisely change the underlying models’ prediction for a given instance by unlearning key steps, indicating when a CoT is parametrically faithful. Further analysis shows that CoTs generated by models post-unlearning support different answers, hinting at a deeper effect of unlearning.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -729,7 +729,7 @@
       "Jieyu Zhao",
       "Jian Kang"
     ],
-    "abstract": "",
+    "abstract": "LLM-as-a-judge has become a promising paradigm for using large language models (LLMs) to evaluate natural language generation (NLG), but the uncertainty of its evaluation remains underexplored. This lack of reliability may limit its deployment in many applications. This work presents the first framework to analyze the uncertainty by offering a prediction interval of LLM-based scoring via conformal prediction. Conformal prediction constructs continuous prediction intervals from a single evaluation run, and we design an ordinal boundary adjustment for discrete rating tasks. We also suggest a midpoint-based score within the interval as a low-bias alternative to raw model score and weighted average. We perform extensive experiments and analysis, which show that conformal prediction can provide valid prediction interval with coverage guarantees. We also explore the usefulness of interval midpoint and judge reprompting for better judgment.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -746,7 +746,7 @@
       "Freda Shi",
       "Jian Zhu"
     ],
-    "abstract": "",
+    "abstract": "This paper introduces LingGym, a new benchmark that evaluates LLMs’ capacity for meta-linguistic reasoning using Interlinear Glossed Text (IGT) and grammatical descriptions extracted from 18 typologically diverse reference grammars. Unlike previous work that focuses on specific downstream tasks, we assess whether LLMs can generalize linguistic inference across low-resource languages and structures not seen during training. We present a controlled evaluation task: Word-Gloss Inference, in which the model must infer a missing word and gloss from context using varying levels of linguistic information (e.g., glosses, grammatical explanations, translations). Our results show that incorporating structured linguistic cues leads to consistent improvements in reasoning performance across all models. This work highlights both the promise and current limitations of using LLMs for typologically informed linguistic analysis and low-resource language documentation.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -767,7 +767,7 @@
       "Zhenfei Yin",
       "Lei Bai"
     ],
-    "abstract": "",
+    "abstract": "Multi-agent systems have emerged as a promising approach for enhancing the reasoning capabilities of large language models in complex problem-solving. However, current MAS frameworks are limited by poor flexibility and scalability, with underdeveloped optimization strategies. To address these challenges, we propose ReSo, which integrates task graph generation with a reward-driven two-stage agent selection process. The core of ReSo is the proposed Collaborative Reward Model, which can provide fine-grained reward signals for MAS cooperation for optimization. We also introduce an automated data synthesis framework for generating MAS benchmarks, without human annotations. Experimentally, ReSo matches or outperforms existing methods. ReSo achieves33.7%and32.3%accuracy on Math-MAS and SciBench-MAS SciBench, while other methods completely fail. The code and data are available at [Reso](https://github.com/hengzzzhou/ReSo).",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -782,7 +782,7 @@
       "Haoran Zhao",
       "Robert D. Hawkins"
     ],
-    "abstract": "",
+    "abstract": "Polite speech poses a fundamental alignment challenge for large language models (LLMs). Humans deploy a rich repertoire of linguistic strategies to balance informational and social goals – from positive approaches that build rapport (compliments, expressions of interest) to negative strategies that minimize imposition (hedging, indirectness).We investigate whether LLMs employ a similarly context-sensitive repertoire by comparing human and LLM responses to English-language scenarios in both constrained and open-ended production tasks.We find that larger models (≥70B parameters) successfully replicate key effects from the computational pragmatics literature, and human evaluators prefer LLM-generated responses in open-ended contexts. However, further linguistic analyses reveal that models disproportionately rely on negative politeness strategies to create distance even in positive contexts, potentially leading to misinterpretations. While LLMs thus demonstrate an impressive command of politeness strategies, these systematic differences provide important groundwork for making intentional choices about pragmatic behavior in human-AI communication.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -799,7 +799,7 @@
       "Hancheng Cao",
       "Bahareh Sarrafzadeh"
     ],
-    "abstract": "",
+    "abstract": "As large language models (LLMs) are used in complex writing workflows, users engage in multi-turn interactions to steer generations to better fit their needs. Rather than passively accepting output, users actively refine, explore, and co-construct text. We conduct a large scale analysis of this collaborative behavior for users engaged in writing tasks in the wild with two popular AI assistants, Bing Copilot and WildChat. Our analysis goes beyond simple task classification or satisfaction estimation common in prior work and instead characterizes how users interact with LLMs through the course of a session. We identify prototypical behaviors in how users interact with LLMs in prompts following their original request. We refer to these as Prototypical Human AI Collaboration Behaviors (PATHs) and find that a small group of PATHs explain a majority of the variation seen in user-LLM interaction. These PATHs span users revising intents, exploring texts, posing questions, adjusting style or injecting new content. Next, we find statistically significant correlations between specific writing intents and PATHs, revealing how users’ intents shape their collaboration behaviors. We conclude by discussing the implications of our findings on LLM alignment.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -820,7 +820,7 @@
       "Tong Zhang",
       "Han Zhao"
     ],
-    "abstract": "",
+    "abstract": "Reward modeling is a key step in building safe foundation models when applying reinforcement learning from human feedback (RLHF) to align Large Language Models (LLMs). However, reward modeling based on the Bradley-Terry (BT) model assumes a global reward function, failing to capture the inherently diverse and heterogeneous human preferences. Hence, such oversimplification limits LLMs from supporting personalization and pluralistic alignment. Theoretically, we show that when human preferences follow a mixture distribution of diverse subgroups, a single BT model has an irreducible error. While existing solutions, such as fine-grained annotations via prompting or structured preference elicitation, help address this issue, they are costly and constrained by predefined attributes, failing to fully capture the richness of human values. In this work, we introduce MiCRo, a two-stage framework that enhances personalized preference learning by leveraging large-scale binary preference datasets without requiring explicit fine-grained annotations. In the first stage, MiCRo employs a mixture of preferences to model diverse human preferences, enabling a flexible representation of diverse value systems. In the second stage, MiCRo integrates an online routing strategy that dynamically adapts mixture weights based on specific context to resolve ambiguity, allowing for efficient and scalable preference adaptation with minimal additional supervision. Experiments on multiple preference datasets demonstrate that MiCRo effectively captures diverse human preferences and significantly improves personalized preference learning on downstream tasks.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -836,7 +836,7 @@
       "Marco Valentino",
       "André Freitas"
     ],
-    "abstract": "",
+    "abstract": "Thanks to their linguistic capabilities, LLMs offer an opportunity to bridge the gap between informal mathematics and formal languages through autoformalization. However, it is still unclear how well LLMs generalize to sophisticated and naturally occurring mathematical statements. To address this gap, we investigate the task of autoformalizing real-world mathematical definitions: a critical component of mathematical discourse. Specifically, we introduce two novel resources for autoformalization, collecting definitions from Wikipedia (Def_Wiki) and arXiv papers (Def_ArXiv). We then systematically evaluate a range of LLMs, analyzing their ability to formalize definitions into Isabelle/HOL. Furthermore, we investigate strategies to enhance LLMs’ performance including refinement through external feedback from Proof Assistants, and formal definition grounding, where we augment LLMs’ formalizations through relevant contextual elements from formal mathematical libraries. Our findings reveal that definitions present a greater challenge compared to existing benchmarks, such as miniF2F. In particular, we found that LLMs still struggle with self-correction, and aligning with relevant mathematical libraries. At the same time, structured refinement methods and definition grounding strategies yield notable improvements of up to 16% on self-correction capabilities and 43% on the reduction of undefined errors, highlighting promising directions for enhancing LLM-based autoformalization in real-world scenarios.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
@@ -852,7 +852,7 @@
       "Mabsur Fatin Bin Hossain",
       "Md Mosaddek Khan"
     ],
-    "abstract": "",
+    "abstract": "Large language models (LLMs) are no longer just language generators—they are increasingly used to simulate human behavior, perspectives, and demographic variation across social domains, from public opinion surveys to experimental research. Amid this shift, the use of LLMs to simulate historical narratives has emerged as a timely frontier. It is crucial to scrutinize the asymmetries these models embed when framing, interpreting, and retelling the past. Building on prior work that defines caricature as the combination of individuation and exaggeration, we analyze LLM-generated responses across 197 historically significant events—each featuring a directly and an indirectly affected persona. We find that LLMs reliably distinguish persona-based responses from neutral baselines, and that directly affected personas consistently exhibit higher exaggeration—amplifying identity-specific portrayals. Beyond lexical patterns, personas often frame the same event in conflicting ways—especially in military, political, and morally charged contexts. Grammatical analysis further reveals that direct personas adopt more passive constructions in institutional contexts, but shift to active framing when emotional immediacy is foregrounded. Our findings show how subtle asymmetries in tone, stance, and emphasis—not overt toxicity—can quietly, yet systematically, distort how history is told and remembered.",
     "keywords": [],
     "tldr": "",
     "venue": "EMNLP 2025",
