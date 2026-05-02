@@ -160,12 +160,14 @@ function applyFilters() {
 
 function renderPapers() {
     const container = document.getElementById('papers-container');
+    const totalPages = Math.max(1, Math.ceil(filteredPapers.length / papersPerPage));
+    currentPage = Math.min(Math.max(currentPage, 1), totalPages);
     const start = (currentPage - 1) * papersPerPage;
     const papersToShow = filteredPapers.slice(start, start + papersPerPage);
 
     document.getElementById('filtered-count').textContent = filteredPapers.length;
 
-    if (papersToShow.length === 0) {
+    if (filteredPapers.length === 0) {
         container.innerHTML = '<div class="no-results"><i class="fas fa-search"></i><p>No papers found matching your criteria</p></div>';
         document.getElementById('pagination').style.display = 'none';
         return;
@@ -173,7 +175,6 @@ function renderPapers() {
 
     container.innerHTML = papersToShow.map(createPaperCard).join('');
 
-    const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
     document.getElementById('pagination').style.display = totalPages > 1 ? 'flex' : 'none';
     document.getElementById('prev-btn').disabled = currentPage === 1;
     document.getElementById('next-btn').disabled = currentPage === totalPages;
