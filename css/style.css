@@ -221,8 +221,11 @@ select:focus, input[type="text"]:focus {
 
 #search-input::placeholder {
     display: inline-block;
-    animation: placeholder-scroll 8s linear infinite;
     white-space: nowrap;
+}
+
+#search-input:hover::placeholder {
+    animation: placeholder-scroll 8s linear infinite;
 }
 
 @keyframes placeholder-scroll {
