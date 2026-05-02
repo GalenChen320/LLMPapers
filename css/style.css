@@ -533,18 +533,19 @@ select:focus, input[type="text"]:focus {
 
 footer {
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 40px;
-    border-top: 1px solid #ece4d8;
-    color: #a09080;
+    padding: 20px;
+    margin-top: 10px;
+    color: #fff;
     font-size: 0.82rem;
+    background: #8a7a6a;
+    border-radius: 10px;
 }
 
 footer a {
-    color: #c49a6c;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: underline;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #c49a6c;
 }
