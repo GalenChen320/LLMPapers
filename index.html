@@ -7,342 +7,329 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0f0f23 100%);
+            background: #faf8f3;
             min-height: 100vh;
-            color: #e0e0e0;
+            color: #3a3a3a;
         }
-        
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header {
             text-align: center;
-            padding: 40px 20px;
-            background: rgba(255,255,255,0.03);
-            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding: 50px 20px 40px;
+            background: linear-gradient(135deg, #fff8ee 0%, #f5efe0 100%);
+            border-bottom: 1px solid #e8e0d0;
             margin-bottom: 30px;
         }
-        
+
         header h1 {
             font-size: 2.5rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #5b4636;
             margin-bottom: 10px;
         }
-        
+
+        header h1 i {
+            color: #c49a6c;
+        }
+
         header p {
-            color: #888;
+            color: #8a7a6a;
             font-size: 1.1rem;
         }
-        
+
         .stats-bar {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-top: 20px;
+            gap: 50px;
+            margin-top: 25px;
             flex-wrap: wrap;
         }
-        
-        .stat-item {
-            text-align: center;
-        }
-        
+
+        .stat-item { text-align: center; }
+
         .stat-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #667eea;
+            color: #c49a6c;
         }
-        
+
         .stat-label {
-            font-size: 0.85rem;
-            color: #888;
+            font-size: 0.8rem;
+            color: #a09080;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
         }
-        
+
         .filters {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
-            padding: 20px;
+            background: #fff;
+            border-radius: 14px;
+            padding: 20px 24px;
             margin-bottom: 30px;
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
             align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid #ece4d8;
         }
-        
+
         .filter-group {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-        
+
         .filter-group label {
             font-size: 0.9rem;
-            color: #aaa;
+            color: #7a6a5a;
             font-weight: 500;
+            white-space: nowrap;
         }
-        
+
+        .filter-group label i { color: #c49a6c; }
+
         select, input[type="text"] {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: #faf8f3;
+            border: 1px solid #ddd4c6;
             border-radius: 8px;
             padding: 10px 15px;
-            color: #fff;
+            color: #3a3a3a;
             font-size: 0.95rem;
             min-width: 150px;
             cursor: pointer;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
-        
-        select:hover, input[type="text"]:hover {
-            border-color: #667eea;
-        }
-        
+
+        select:hover, input[type="text"]:hover { border-color: #c49a6c; }
+
         select:focus, input[type="text"]:focus {
             outline: none;
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            border-color: #c49a6c;
+            box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.15);
         }
-        
-        input[type="text"] {
-            min-width: 250px;
-        }
-        
+
+        input[type="text"] { min-width: 280px; }
+
         .papers-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
             gap: 20px;
         }
-        
+
         .paper-card {
-            background: rgba(255,255,255,0.05);
-            border-radius: 16px;
+            background: #fff;
+            border-radius: 14px;
             padding: 24px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid #ece4d8;
             transition: all 0.3s ease;
-            cursor: pointer;
+            cursor: default;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.04);
         }
-        
+
         .paper-card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(102, 126, 234, 0.5);
-            box-shadow: 0 10px 40px rgba(102, 126, 234, 0.15);
+            transform: translateY(-3px);
+            border-color: #c49a6c;
+            box-shadow: 0 8px 30px rgba(196, 154, 108, 0.12);
         }
-        
+
         .paper-venue {
             display: inline-block;
-            padding: 4px 12px;
+            padding: 4px 14px;
             border-radius: 20px;
-            font-size: 0.75rem;
+            font-size: 0.72rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
             margin-bottom: 12px;
-        }
-        
-        .venue-iclr { background: linear-gradient(135deg, #667eea, #764ba2); }
-        .venue-neurips { background: linear-gradient(135deg, #f093fb, #f5576c); }
-        .venue-icml { background: linear-gradient(135deg, #4facfe, #00f2fe); }
-        .venue-acl { background: linear-gradient(135deg, #43e97b, #38f9d7); }
-        .venue-emnlp { background: linear-gradient(135deg, #fa709a, #fee140); }
-        .venue-colm { background: linear-gradient(135deg, #a8edea, #fed6e3); color: #333; }
-        
-        .paper-title {
-            font-size: 1.1rem;
-            font-weight: 600;
             color: #fff;
+        }
+
+        .venue-iclr   { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+        .venue-neurips { background: linear-gradient(135deg, #ec4899, #f43f5e); }
+        .venue-icml   { background: linear-gradient(135deg, #0ea5e9, #06b6d4); }
+        .venue-acl    { background: linear-gradient(135deg, #10b981, #34d399); }
+        .venue-emnlp  { background: linear-gradient(135deg, #f59e0b, #f97316); }
+        .venue-colm   { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
+
+        .paper-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #2d2418;
             margin-bottom: 10px;
-            line-height: 1.4;
+            line-height: 1.45;
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        
+
         .paper-authors {
-            font-size: 0.85rem;
-            color: #aaa;
+            font-size: 0.84rem;
+            color: #8a7a6a;
             margin-bottom: 12px;
             display: -webkit-box;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
-        
+
+        .paper-authors i { color: #c49a6c; }
+
         .paper-abstract {
-            font-size: 0.9rem;
-            color: #888;
-            line-height: 1.6;
+            font-size: 0.88rem;
+            color: #6a5a4a;
+            line-height: 1.65;
             display: -webkit-box;
             -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
             margin-bottom: 15px;
         }
-        
+
         .paper-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
             margin-bottom: 15px;
         }
-        
+
         .tag {
-            background: rgba(102, 126, 234, 0.2);
-            color: #a0a0ff;
+            background: #f5efe6;
+            color: #7a6a5a;
             padding: 3px 10px;
             border-radius: 12px;
-            font-size: 0.75rem;
+            font-size: 0.73rem;
+            border: 1px solid #ece4d8;
         }
-        
+
         .tag.area {
-            background: rgba(67, 233, 123, 0.2);
-            color: #7dffaf;
+            background: #e8f5e9;
+            color: #2e7d32;
+            border-color: #c8e6c9;
         }
-        
+
         .tag.award {
-            background: linear-gradient(135deg, #f5af19, #f12711);
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
             color: #fff;
+            border: none;
         }
-        
+
         .paper-links {
             display: flex;
             gap: 10px;
         }
-        
+
         .paper-links a {
             display: inline-flex;
             align-items: center;
             gap: 5px;
             padding: 6px 14px;
-            background: rgba(255,255,255,0.1);
+            background: #faf8f3;
+            border: 1px solid #ece4d8;
             border-radius: 8px;
-            color: #667eea;
+            color: #7a6a5a;
             text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.84rem;
             font-weight: 500;
             transition: all 0.3s ease;
         }
-        
+
         .paper-links a:hover {
-            background: #667eea;
+            background: #c49a6c;
             color: #fff;
+            border-color: #c49a6c;
         }
-        
+
         .tldr {
-            background: rgba(102, 126, 234, 0.1);
-            border-left: 3px solid #667eea;
+            background: #fdf6ec;
+            border-left: 3px solid #c49a6c;
             padding: 10px 15px;
             margin-bottom: 15px;
             border-radius: 0 8px 8px 0;
-            font-size: 0.85rem;
-            color: #b0b0ff;
+            font-size: 0.84rem;
+            color: #6a5a4a;
         }
-        
-        .tldr strong {
-            color: #667eea;
-        }
-        
+
+        .tldr strong { color: #c49a6c; }
+
         .pagination {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             margin-top: 40px;
             padding: 20px;
         }
-        
+
         .pagination button {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: #fff;
-            padding: 10px 20px;
+            background: #fff;
+            border: 1px solid #ddd4c6;
+            color: #5b4636;
+            padding: 10px 22px;
             border-radius: 8px;
             cursor: pointer;
             font-size: 0.9rem;
             transition: all 0.3s ease;
+            font-family: inherit;
         }
-        
+
         .pagination button:hover:not(:disabled) {
-            background: #667eea;
-            border-color: #667eea;
+            background: #c49a6c;
+            color: #fff;
+            border-color: #c49a6c;
         }
-        
+
         .pagination button:disabled {
-            opacity: 0.5;
+            opacity: 0.4;
             cursor: not-allowed;
         }
-        
-        .pagination span {
-            color: #888;
-            font-size: 0.9rem;
-        }
-        
+
+        .pagination span { color: #8a7a6a; font-size: 0.9rem; }
+
         .no-results {
             text-align: center;
             padding: 60px 20px;
-            color: #666;
+            color: #a09080;
         }
-        
+
         .no-results i {
-            font-size: 4rem;
+            font-size: 3.5rem;
             margin-bottom: 20px;
-            color: #444;
+            color: #d4c4b4;
         }
-        
+
         .loading {
             text-align: center;
             padding: 100px;
-            color: #667eea;
+            color: #c49a6c;
         }
-        
+
         .loading i {
-            font-size: 3rem;
+            font-size: 2.5rem;
             animation: spin 1s linear infinite;
         }
-        
+
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-        
+
         @media (max-width: 768px) {
-            .papers-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            header h1 {
-                font-size: 1.8rem;
-            }
-            
-            .filters {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            .filter-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-            
-            select, input[type="text"] {
-                min-width: 100%;
-            }
+            .papers-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 1.8rem; }
+            .filters { flex-direction: column; align-items: stretch; }
+            .filter-group { flex-direction: column; align-items: stretch; }
+            select, input[type="text"] { min-width: 100%; }
         }
     </style>
 </head>
@@ -365,7 +352,7 @@
             </div>
         </div>
     </header>
-    
+
     <div class="container">
         <div class="filters">
             <div class="filter-group">
@@ -385,27 +372,27 @@
                 <input type="text" id="search-input" placeholder="Search by title, author, or keyword...">
             </div>
         </div>
-        
+
         <div id="papers-container" class="papers-grid">
             <div class="loading">
                 <i class="fas fa-spinner"></i>
                 <p>Loading papers...</p>
             </div>
         </div>
-        
+
         <div class="pagination" id="pagination" style="display: none;">
             <button id="prev-btn"><i class="fas fa-chevron-left"></i> Previous</button>
             <span id="page-info"></span>
             <button id="next-btn">Next <i class="fas fa-chevron-right"></i></button>
         </div>
     </div>
-    
+
     <script>
         let allPapers = [];
         let filteredPapers = [];
         let currentPage = 1;
         const papersPerPage = 20;
-        
+
         const venueFiles = {
             'ICLR 2024': 'papers/iclr2024_oral_spotlight.jsonl',
             'ICLR 2025': 'papers/iclr2025_oral_spotlight.jsonl',
@@ -421,15 +408,14 @@
             'COLM 2024': 'papers/colm2024_all.jsonl',
             'COLM 2025': 'papers/colm2025_all.jsonl',
         };
-        
+
         async function loadPapers() {
             const promises = Object.entries(venueFiles).map(async ([venue, file]) => {
                 try {
                     const response = await fetch(file);
                     if (!response.ok) return [];
                     const text = await response.text();
-                    const lines = text.trim().split('\n');
-                    return lines.map(line => {
+                    return text.trim().split('\n').map(line => {
                         const paper = JSON.parse(line);
                         paper.venue = venue;
                         return paper;
@@ -439,193 +425,140 @@
                     return [];
                 }
             });
-            
+
             const results = await Promise.all(promises);
             allPapers = results.flat();
-            
-            // Sort by venue then title
+
             allPapers.sort((a, b) => {
-                const venueCompare = a.venue.localeCompare(b.venue);
-                if (venueCompare !== 0) return venueCompare;
-                return a.title.localeCompare(b.title);
+                const vc = a.venue.localeCompare(b.venue);
+                return vc !== 0 ? vc : a.title.localeCompare(b.title);
             });
-            
+
             updateStats();
             populateFilters();
             applyFilters();
         }
-        
+
         function updateStats() {
             document.getElementById('total-papers').textContent = allPapers.length;
             const conferences = new Set(allPapers.map(p => p.venue.split(' ')[0]));
             document.getElementById('total-conferences').textContent = conferences.size;
         }
-        
+
         function populateFilters() {
             const conferences = [...new Set(allPapers.map(p => p.venue.split(' ')[0]))].sort();
             const years = [...new Set(allPapers.map(p => p.venue.split(' ')[1]))].sort();
-            
-            const conferenceSelect = document.getElementById('conference-filter');
-            conferences.forEach(conf => {
-                const option = document.createElement('option');
-                option.value = conf;
-                option.textContent = conf;
-                conferenceSelect.appendChild(option);
-            });
-            
-            const yearSelect = document.getElementById('year-filter');
-            years.forEach(year => {
-                const option = document.createElement('option');
-                option.value = year;
-                option.textContent = year;
-                yearSelect.appendChild(option);
-            });
+
+            const cs = document.getElementById('conference-filter');
+            conferences.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; cs.appendChild(o); });
+
+            const ys = document.getElementById('year-filter');
+            years.forEach(y => { const o = document.createElement('option'); o.value = y; o.textContent = y; ys.appendChild(o); });
         }
-        
+
         function applyFilters() {
             const conference = document.getElementById('conference-filter').value;
             const year = document.getElementById('year-filter').value;
             const search = document.getElementById('search-input').value.toLowerCase();
-            
+
             filteredPapers = allPapers.filter(paper => {
                 const [conf, yr] = paper.venue.split(' ');
                 if (conference !== 'all' && conf !== conference) return false;
                 if (year !== 'all' && yr !== year) return false;
                 if (search) {
-                    const searchFields = [
-                        paper.title,
-                        paper.authors.join(' '),
-                        paper.abstract,
-                        paper.keywords?.join(' ') || '',
-                        paper.tldr || '',
-                        paper.primary_area || ''
-                    ].join(' ').toLowerCase();
-                    if (!searchFields.includes(search)) return false;
+                    const fields = [paper.title, paper.authors.join(' '), paper.abstract, paper.keywords?.join(' ') || '', paper.tldr || '', paper.primary_area || ''].join(' ').toLowerCase();
+                    if (!fields.includes(search)) return false;
                 }
                 return true;
             });
-            
+
             currentPage = 1;
             renderPapers();
         }
-        
+
         function renderPapers() {
             const container = document.getElementById('papers-container');
             const start = (currentPage - 1) * papersPerPage;
-            const end = start + papersPerPage;
-            const papersToShow = filteredPapers.slice(start, end);
-            
+            const papersToShow = filteredPapers.slice(start, start + papersPerPage);
+
             document.getElementById('filtered-count').textContent = filteredPapers.length;
-            
+
             if (papersToShow.length === 0) {
-                container.innerHTML = `
-                    <div class="no-results">
-                        <i class="fas fa-search"></i>
-                        <p>No papers found matching your criteria</p>
-                    </div>
-                `;
+                container.innerHTML = '<div class="no-results"><i class="fas fa-search"></i><p>No papers found matching your criteria</p></div>';
                 document.getElementById('pagination').style.display = 'none';
                 return;
             }
-            
-            container.innerHTML = papersToShow.map(paper => createPaperCard(paper)).join('');
-            
-            // Update pagination
+
+            container.innerHTML = papersToShow.map(createPaperCard).join('');
+
             const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
             document.getElementById('pagination').style.display = totalPages > 1 ? 'flex' : 'none';
             document.getElementById('prev-btn').disabled = currentPage === 1;
             document.getElementById('next-btn').disabled = currentPage === totalPages;
             document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
         }
-        
+
         function createPaperCard(paper) {
-            const [conf, year] = paper.venue.split(' ');
+            const [conf] = paper.venue.split(' ');
             const venueClass = `venue-${conf.toLowerCase()}`;
-            
             const keywords = (paper.keywords || []).slice(0, 5);
             const area = paper.primary_area;
             const award = paper.award;
-            
-            let tagsHtml = '';
-            if (award) {
-                tagsHtml += `<span class="tag award"><i class="fas fa-award"></i> ${award}</span>`;
-            }
-            if (area) {
-                tagsHtml += `<span class="tag area">${area}</span>`;
-            }
-            keywords.forEach(kw => {
-                tagsHtml += `<span class="tag">${kw}</span>`;
-            });
-            
-            const tldrHtml = paper.tldr ? `
-                <div class="tldr">
-                    <strong>TL;DR:</strong> ${paper.tldr}
-                </div>
-            ` : '';
-            
+
+            let tags = '';
+            if (award) tags += `<span class="tag award"><i class="fas fa-award"></i> ${award}</span>`;
+            if (area) tags += `<span class="tag area">${area}</span>`;
+            keywords.forEach(kw => { tags += `<span class="tag">${kw}</span>`; });
+
+            const tldr = paper.tldr ? `<div class="tldr"><strong>TL;DR:</strong> ${paper.tldr}</div>` : '';
+
             const authors = paper.authors || [];
-            const authorsStr = authors.length > 5 
+            const authorsStr = authors.length > 5
                 ? authors.slice(0, 5).join(', ') + ` et al. (${authors.length} authors)`
                 : authors.join(', ');
-            
-            return `
-                <div class="paper-card">
-                    <span class="paper-venue ${venueClass}">${paper.venue}</span>
-                    <h3 class="paper-title">${escapeHtml(paper.title)}</h3>
-                    <p class="paper-authors"><i class="fas fa-users"></i> ${escapeHtml(authorsStr)}</p>
-                    ${tldrHtml}
-                    <p class="paper-abstract">${escapeHtml(paper.abstract || 'No abstract available')}</p>
-                    <div class="paper-tags">${tagsHtml}</div>
-                    <div class="paper-links">
-                        <a href="${paper.pdf_url}" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
-                        <a href="${paper.html_url}" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
+
+            return `<div class="paper-card">
+                <span class="paper-venue ${venueClass}">${paper.venue}</span>
+                <h3 class="paper-title">${escapeHtml(paper.title)}</h3>
+                <p class="paper-authors"><i class="fas fa-users"></i> ${escapeHtml(authorsStr)}</p>
+                ${tldr}
+                <p class="paper-abstract">${escapeHtml(paper.abstract || 'No abstract available')}</p>
+                <div class="paper-tags">${tags}</div>
+                <div class="paper-links">
+                    <a href="${paper.pdf_url}" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="${paper.html_url}" target="_blank"><i class="fas fa-external-link-alt"></i> View</a>
                 </div>
-            `;
+            </div>`;
         }
-        
+
         function escapeHtml(text) {
             if (!text) return '';
             const div = document.createElement('div');
             div.textContent = text;
             return div.innerHTML;
         }
-        
-        // Event listeners
+
         document.getElementById('conference-filter').addEventListener('change', applyFilters);
         document.getElementById('year-filter').addEventListener('change', applyFilters);
         document.getElementById('search-input').addEventListener('input', debounce(applyFilters, 300));
-        
+
         document.getElementById('prev-btn').addEventListener('click', () => {
-            if (currentPage > 1) {
-                currentPage--;
-                renderPapers();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+            if (currentPage > 1) { currentPage--; renderPapers(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
         });
-        
+
         document.getElementById('next-btn').addEventListener('click', () => {
-            const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
-            if (currentPage < totalPages) {
-                currentPage++;
-                renderPapers();
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
+            const tp = Math.ceil(filteredPapers.length / papersPerPage);
+            if (currentPage < tp) { currentPage++; renderPapers(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
         });
-        
+
         function debounce(func, wait) {
             let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
+            return function(...args) {
                 clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
+                timeout = setTimeout(() => func(...args), wait);
             };
         }
-        
-        // Load papers on page load
+
         loadPapers();
     </script>
 </body>
