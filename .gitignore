@@ -1,4 +1,5 @@
 .env
 __pycache__/
 *.pyc
+papers/.translation_cache/
 

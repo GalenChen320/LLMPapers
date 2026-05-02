@@ -38,4 +38,9 @@ function openModal(paper) {
 function closeModal() {
     document.getElementById('modal-overlay').classList.remove('active');
     document.body.style.overflow = '';
+    document.querySelectorAll('.paper-card .fav-btn').forEach(btn => {
+        const url = btn.dataset.url;
+        const favs = getFavorites();
+        btn.classList.toggle('active', favs.includes(url));
+    });
 }

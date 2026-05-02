@@ -1,17 +1,17 @@
 const venueFiles = {
-    'ICLR 2024': 'papers/iclr2024_oral_spotlight.json',
-    'ICLR 2025': 'papers/iclr2025_oral_spotlight.json',
-    'ICLR 2026': 'papers/iclr2026_oral_spotlight.json',
-    'NeurIPS 2024': 'papers/neurips2024_oral_spotlight.json',
-    'NeurIPS 2025': 'papers/neurips2025_oral_spotlight.json',
-    'ICML 2024': 'papers/icml2024_oral_spotlight.json',
-    'ICML 2025': 'papers/icml2025_oral_spotlight.json',
-    'ACL 2024': 'papers/acl2024_oral.json',
-    'ACL 2025': 'papers/acl2025_oral.json',
-    'EMNLP 2024': 'papers/emnlp2024_oral.json',
-    'EMNLP 2025': 'papers/emnlp2025_oral.json',
-    'COLM 2024': 'papers/colm2024_all.json',
-    'COLM 2025': 'papers/colm2025_all.json',
+    'ICLR 2024': 'papers/raw/iclr2024_oral_spotlight.json',
+    'ICLR 2025': 'papers/raw/iclr2025_oral_spotlight.json',
+    'ICLR 2026': 'papers/raw/iclr2026_oral_spotlight.json',
+    'NeurIPS 2024': 'papers/raw/neurips2024_oral_spotlight.json',
+    'NeurIPS 2025': 'papers/raw/neurips2025_oral_spotlight.json',
+    'ICML 2024': 'papers/raw/icml2024_oral_spotlight.json',
+    'ICML 2025': 'papers/raw/icml2025_oral_spotlight.json',
+    'ACL 2024': 'papers/raw/acl2024_oral.json',
+    'ACL 2025': 'papers/raw/acl2025_oral.json',
+    'EMNLP 2024': 'papers/raw/emnlp2024_oral.json',
+    'EMNLP 2025': 'papers/raw/emnlp2025_oral.json',
+    'COLM 2024': 'papers/raw/colm2024_all.json',
+    'COLM 2025': 'papers/raw/colm2025_all.json',
 };
 
 let allPapers = [];
@@ -19,6 +19,41 @@ let filteredPapers = [];
 let currentPage = 1;
 let papersPerPage = 20;
 let showFavoritesOnly = false;
+
+function saveState() {
+    try {
+        localStorage.setItem('appState', JSON.stringify({
+            conference: document.getElementById('conference-filter').value,
+            year: document.getElementById('year-filter').value,
+            search: document.getElementById('search-input').value,
+            perPage: papersPerPage,
+            page: currentPage,
+            favOnly: showFavoritesOnly,
+        }));
+    } catch {}
+}
+
+function restoreState() {
+    try {
+        const s = JSON.parse(localStorage.getItem('appState'));
+        if (!s) return;
+        if (s.conference) document.getElementById('conference-filter').value = s.conference;
+        if (s.year) document.getElementById('year-filter').value = s.year;
+        if (s.search) document.getElementById('search-input').value = s.search;
+        if (s.perPage) {
+            papersPerPage = s.perPage;
+            document.getElementById('per-page-select').value = String(s.perPage);
+        }
+        if (s.page) {
+            currentPage = s.page;
+            window._restoring = true;
+        }
+        if (s.favOnly) {
+            showFavoritesOnly = true;
+            document.getElementById('fav-filter-btn').classList.add('active');
+        }
+    } catch {}
+}
 
 async function loadPapers() {
     const promises = Object.entries(venueFiles).map(async ([venue, file]) => {
@@ -47,6 +82,7 @@ async function loadPapers() {
 
     updateStats();
     populateFilters();
+    restoreState();
     updateFavCount();
     applyFilters();
 }
@@ -86,8 +122,10 @@ function applyFilters() {
         return true;
     });
 
-    currentPage = 1;
+    if (!window._restoring) currentPage = 1;
+    window._restoring = false;
     renderPapers();
+    saveState();
 }
 
 function renderPapers() {
@@ -161,6 +199,21 @@ function createPaperCard(paper) {
             <button class="fav-btn${isFavorite(paper) ? ' active' : ''}" data-url="${paper.pdf_url}" title="Toggle favorite"><i class="fas fa-heart"></i></button>
         </div>
     </div>`;
+}
+
+function exportPapers() {
+    if (filteredPapers.length === 0) return;
+    const lines = filteredPapers.map(p => {
+        const [conference, year] = p.venue.split(' ');
+        return JSON.stringify({ conference, year, authors: p.authors || [], title: p.title || '', abstract: p.abstract || '' });
+    });
+    const blob = new Blob([lines.join('\n')], { type: 'application/x-jsonlines' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `papers_${filteredPapers.length}.jsonl`;
+    a.click();
+    URL.revokeObjectURL(url);
 }
 
 function escapeHtml(text) {

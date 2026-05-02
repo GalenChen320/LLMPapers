@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
 BASE_URL = "https://api2.openreview.net"
-OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "papers")
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "papers", "raw")
 
 VENUE_CONFIGS = [
     {"conference": "ICLR", "year": 2024, "invitation": "ICLR.cc/2024/Conference/-/Submission", "venue_patterns": ["ICLR 2024 oral", "ICLR 2024 spotlight"], "mode": "filter"},

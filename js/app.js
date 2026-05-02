@@ -48,12 +48,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 document.getElementById('prev-btn').addEventListener('click', () => {
-    if (currentPage > 1) { currentPage--; renderPapers(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    if (currentPage > 1) { currentPage--; renderPapers(); saveState(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 });
 
 document.getElementById('next-btn').addEventListener('click', () => {
     const tp = Math.ceil(filteredPapers.length / papersPerPage);
-    if (currentPage < tp) { currentPage++; renderPapers(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+    if (currentPage < tp) { currentPage++; renderPapers(); saveState(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 });
 
 document.getElementById('page-jump-input').addEventListener('keydown', (e) => {
@@ -63,6 +63,7 @@ document.getElementById('page-jump-input').addEventListener('keydown', (e) => {
         if (val >= 1 && val <= tp && val !== currentPage) {
             currentPage = val;
             renderPapers();
+            saveState();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     }
@@ -74,6 +75,7 @@ document.getElementById('page-jump-input').addEventListener('blur', () => {
     if (val >= 1 && val <= tp && val !== currentPage) {
         currentPage = val;
         renderPapers();
+        saveState();
     } else {
         document.getElementById('page-jump-input').value = currentPage;
     }
@@ -83,6 +85,9 @@ document.getElementById('per-page-select').addEventListener('change', (e) => {
     papersPerPage = parseInt(e.target.value, 10);
     currentPage = 1;
     renderPapers();
+    saveState();
 });
+
+document.getElementById('export-btn').addEventListener('click', exportPapers);
 
 loadPapers();
