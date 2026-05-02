@@ -517,17 +517,15 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 10px;
-    color: #fff;
+    color: #a09080;
     font-size: 0.82rem;
-    background: #8a7a6a;
-    border-radius: 10px;
 }
 
 footer a {
-    color: #fff;
+    color: #c49a6c;
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #c49a6c;
+    color: #8a7a6a;
 }
