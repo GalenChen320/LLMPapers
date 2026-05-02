@@ -113,10 +113,12 @@ function populateFilters() {
 
     const confSelect = document.querySelector('.custom-select[data-id="conference-filter"]');
     const existingConfValues = new Set([...confSelect.querySelectorAll('.custom-select-option')].map(o => o.dataset.value));
+    if (!existingConfValues.has('all')) addCustomOption(confSelect, 'all', 'All Conferences');
     conferences.forEach(c => { if (!existingConfValues.has(c)) addCustomOption(confSelect, c, c); });
 
     const yearSelect = document.querySelector('.custom-select[data-id="year-filter"]');
     const existingYearValues = new Set([...yearSelect.querySelectorAll('.custom-select-option')].map(o => o.dataset.value));
+    if (!existingYearValues.has('all')) addCustomOption(yearSelect, 'all', 'All Years');
     years.forEach(y => { if (!existingYearValues.has(y)) addCustomOption(yearSelect, y, y); });
 
     const perPageSelect = document.querySelector('.custom-select[data-id="per-page-select"]');
