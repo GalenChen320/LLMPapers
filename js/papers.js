@@ -108,11 +108,10 @@ function renderPapers() {
     document.getElementById('pagination').style.display = totalPages > 1 ? 'flex' : 'none';
     document.getElementById('prev-btn').disabled = currentPage === 1;
     document.getElementById('next-btn').disabled = currentPage === totalPages;
-    document.getElementById('page-info').textContent = `Page ${currentPage} of ${totalPages}`;
+    document.getElementById('total-pages').textContent = totalPages;
     const jumpInput = document.getElementById('page-jump-input');
     jumpInput.max = totalPages;
     jumpInput.value = currentPage;
-    jumpInput.placeholder = `1-${totalPages}`;
 }
 
 function createPaperCard(paper) {

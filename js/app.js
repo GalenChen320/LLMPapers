@@ -56,18 +56,27 @@ document.getElementById('next-btn').addEventListener('click', () => {
     if (currentPage < tp) { currentPage++; renderPapers(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
 });
 
-document.getElementById('page-jump-btn').addEventListener('click', () => {
+document.getElementById('page-jump-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+        const tp = Math.ceil(filteredPapers.length / papersPerPage);
+        const val = parseInt(e.target.value, 10);
+        if (val >= 1 && val <= tp && val !== currentPage) {
+            currentPage = val;
+            renderPapers();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    }
+});
+
+document.getElementById('page-jump-input').addEventListener('blur', () => {
     const tp = Math.ceil(filteredPapers.length / papersPerPage);
     const val = parseInt(document.getElementById('page-jump-input').value, 10);
     if (val >= 1 && val <= tp && val !== currentPage) {
         currentPage = val;
         renderPapers();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+        document.getElementById('page-jump-input').value = currentPage;
     }
-});
-
-document.getElementById('page-jump-input').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') document.getElementById('page-jump-btn').click();
 });
 
 document.getElementById('per-page-select').addEventListener('change', (e) => {
