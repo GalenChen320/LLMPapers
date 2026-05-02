@@ -81,8 +81,9 @@ async function loadPapers() {
 
         updateStats();
 
+        populateFilters();
+
         if (firstBatch) {
-            populateFilters();
             restoreState();
             updateFavCount();
             firstBatch = false;
