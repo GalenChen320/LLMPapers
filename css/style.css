@@ -361,9 +361,13 @@ input[type="text"] { min-width: 280px; }
 }
 
 .no-results {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 60px 20px;
     color: #a09080;
+    grid-column: 1 / -1;
 }
 
 .no-results i {
