@@ -394,19 +394,19 @@
         const papersPerPage = 20;
 
         const venueFiles = {
-            'ICLR 2024': 'papers/iclr2024_oral_spotlight.jsonl',
-            'ICLR 2025': 'papers/iclr2025_oral_spotlight.jsonl',
-            'ICLR 2026': 'papers/iclr2026_oral_spotlight.jsonl',
-            'NeurIPS 2024': 'papers/neurips2024_oral_spotlight.jsonl',
-            'NeurIPS 2025': 'papers/neurips2025_oral_spotlight.jsonl',
-            'ICML 2024': 'papers/icml2024_oral_spotlight.jsonl',
-            'ICML 2025': 'papers/icml2025_oral_spotlight.jsonl',
-            'ACL 2024': 'papers/acl2024_oral.jsonl',
-            'ACL 2025': 'papers/acl2025_oral.jsonl',
-            'EMNLP 2024': 'papers/emnlp2024_oral.jsonl',
-            'EMNLP 2025': 'papers/emnlp2025_oral.jsonl',
-            'COLM 2024': 'papers/colm2024_all.jsonl',
-            'COLM 2025': 'papers/colm2025_all.jsonl',
+            'ICLR 2024': 'papers/iclr2024_oral_spotlight.json',
+            'ICLR 2025': 'papers/iclr2025_oral_spotlight.json',
+            'ICLR 2026': 'papers/iclr2026_oral_spotlight.json',
+            'NeurIPS 2024': 'papers/neurips2024_oral_spotlight.json',
+            'NeurIPS 2025': 'papers/neurips2025_oral_spotlight.json',
+            'ICML 2024': 'papers/icml2024_oral_spotlight.json',
+            'ICML 2025': 'papers/icml2025_oral_spotlight.json',
+            'ACL 2024': 'papers/acl2024_oral.json',
+            'ACL 2025': 'papers/acl2025_oral.json',
+            'EMNLP 2024': 'papers/emnlp2024_oral.json',
+            'EMNLP 2025': 'papers/emnlp2025_oral.json',
+            'COLM 2024': 'papers/colm2024_all.json',
+            'COLM 2025': 'papers/colm2025_all.json',
         };
 
         async function loadPapers() {
@@ -414,9 +414,8 @@
                 try {
                     const response = await fetch(file);
                     if (!response.ok) return [];
-                    const text = await response.text();
-                    return text.trim().split('\n').map(line => {
-                        const paper = JSON.parse(line);
+                    const papers = await response.json();
+                    return papers.map(paper => {
                         paper.venue = venue;
                         return paper;
                     });
