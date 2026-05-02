@@ -337,9 +337,13 @@ input[type="text"] { min-width: 280px; }
 }
 
 .loading {
-    text-align: center;
-    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 20px;
     color: #c49a6c;
+    grid-column: 1 / -1;
 }
 
 .loading i {
