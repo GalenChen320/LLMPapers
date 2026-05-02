@@ -46,7 +46,6 @@ function restoreState() {
         }
         if (s.page) {
             currentPage = s.page;
-            window._restoring = true;
         }
         if (s.favOnly) {
             showFavoritesOnly = true;
@@ -58,7 +57,7 @@ function restoreState() {
 async function loadPapers() {
     const container = document.getElementById('papers-container');
     const files = Object.entries(venueFiles);
-    let firstBatch = true;
+    window._initialLoad = true;
 
     for (let i = 0; i < files.length; i++) {
         const [venue, file] = files[i];
@@ -80,24 +79,15 @@ async function loadPapers() {
         });
 
         updateStats();
-
         populateFilters();
-
-        if (firstBatch) {
-            restoreState();
-            updateFavCount();
-            firstBatch = false;
-        }
-
         applyFilters();
     }
 
-    if (firstBatch) {
-        populateFilters();
-        restoreState();
-        updateFavCount();
-        applyFilters();
-    }
+    restoreState();
+    updateFavCount();
+    applyFilters();
+
+    window._initialLoad = false;
 }
 
 function updateStats() {
@@ -105,6 +95,18 @@ function updateStats() {
     const conferences = new Set(allPapers.map(p => p.venue.split(' ')[0]));
     document.getElementById('total-conferences').textContent = conferences.size;
     document.getElementById('filtered-count').textContent = filteredPapers.length || allPapers.length;
+}
+
+function syncSelectDisplay(selectEl) {
+    const value = selectEl.dataset.value;
+    const triggerSpan = selectEl.querySelector('.custom-select-trigger span');
+    const opt = selectEl.querySelector(`.custom-select-option[data-value="${value}"]`);
+    if (opt) {
+        triggerSpan.textContent = opt.textContent;
+        selectEl.querySelectorAll('.custom-select-option').forEach(o => {
+            o.classList.toggle('selected', o.dataset.value === value);
+        });
+    }
 }
 
 function populateFilters() {
@@ -128,6 +130,9 @@ function populateFilters() {
         addCustomOption(perPageSelect, '50', '50');
         addCustomOption(perPageSelect, '100', '100');
     }
+
+    syncSelectDisplay(confSelect);
+    syncSelectDisplay(yearSelect);
 }
 
 function applyFilters() {
@@ -148,8 +153,7 @@ function applyFilters() {
         return true;
     });
 
-    if (!window._restoring) currentPage = 1;
-    window._restoring = false;
+    if (!window._initialLoad) currentPage = 1;
     renderPapers();
     saveState();
 }
