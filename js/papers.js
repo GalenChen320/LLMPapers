@@ -27,6 +27,7 @@ async function loadPapers() {
             if (!response.ok) return [];
             const papers = await response.json();
             return papers.map(paper => {
+                paper.originalVenue = paper.venue;
                 paper.venue = venue;
                 return paper;
             });
@@ -114,15 +115,24 @@ function renderPapers() {
     jumpInput.value = currentPage;
 }
 
+function getPaperTypeLabel(paper) {
+    const conf = paper.venue.split(' ')[0];
+    if (conf === 'COLM') return 'Regular';
+    if (paper.award) return paper.award;
+    const ov = (paper.originalVenue || '').toLowerCase();
+    if (ov.includes('spotlight')) return 'Spotlight';
+    if (ov.includes('oral')) return 'Oral';
+    return 'Oral';
+}
+
 function createPaperCard(paper) {
     const [conf] = paper.venue.split(' ');
     const venueClass = `venue-${conf.toLowerCase()}`;
     const keywords = (paper.keywords || []).slice(0, 5);
     const area = paper.primary_area;
-    const award = paper.award;
+    const typeLabel = getPaperTypeLabel(paper);
 
     let tags = '';
-    if (award) tags += `<span class="tag award"><i class="fas fa-award"></i> ${award}</span>`;
     if (area) tags += `<span class="tag area">${area}</span>`;
     keywords.forEach(kw => { tags += `<span class="tag">${kw}</span>`; });
 
@@ -133,8 +143,13 @@ function createPaperCard(paper) {
         ? authors.slice(0, 5).join(', ') + ` et al. (${authors.length} authors)`
         : authors.join(', ');
 
+    const typeClass = typeLabel === 'Regular' ? 'paper-type-regular' :
+                      (paper.award ? 'paper-type-award' :
+                      (typeLabel === 'Spotlight' ? 'paper-type-spotlight' : 'paper-type-oral'));
+
     return `<div class="paper-card" data-url="${paper.pdf_url}">
         <span class="paper-venue ${venueClass}">${paper.venue}</span>
+        <span class="paper-type ${typeClass}">${paper.award ? '<i class="fas fa-award"></i> ' : ''}${escapeHtml(typeLabel)}</span>
         <h3 class="paper-title">${escapeHtml(paper.title)}</h3>
         <p class="paper-authors"><i class="fas fa-users"></i> ${escapeHtml(authorsStr)}</p>
         ${tldr}
