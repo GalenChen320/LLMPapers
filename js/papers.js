@@ -58,41 +58,54 @@ function restoreState() {
 async function loadPapers() {
     initAllCustomSelects();
 
-    const promises = Object.entries(venueFiles).map(async ([venue, file]) => {
+    const container = document.getElementById('papers-container');
+    const files = Object.entries(venueFiles);
+    let firstBatch = true;
+
+    for (let i = 0; i < files.length; i++) {
+        const [venue, file] = files[i];
+        container.innerHTML = `<div class="loading"><i class="fas fa-spinner"></i><p>Loading papers... (${i}/${files.length})</p></div>`;
+
         try {
             const response = await fetch(file);
-            if (!response.ok) return [];
+            if (!response.ok) continue;
             const papers = await response.json();
-            return papers.map(paper => {
-                paper.originalVenue = paper.venue;
-                paper.venue = venue;
-                return paper;
-            });
+            papers.forEach(p => { p.originalVenue = p.venue; p.venue = venue; });
+            allPapers = allPapers.concat(papers);
         } catch (e) {
             console.error(`Error loading ${file}:`, e);
-            return [];
         }
-    });
 
-    const results = await Promise.all(promises);
-    allPapers = results.flat();
+        allPapers.sort((a, b) => {
+            const vc = a.venue.localeCompare(b.venue);
+            return vc !== 0 ? vc : a.title.localeCompare(b.title);
+        });
 
-    allPapers.sort((a, b) => {
-        const vc = a.venue.localeCompare(b.venue);
-        return vc !== 0 ? vc : a.title.localeCompare(b.title);
-    });
+        updateStats();
 
-    updateStats();
-    populateFilters();
-    restoreState();
-    updateFavCount();
-    applyFilters();
+        if (firstBatch) {
+            populateFilters();
+            restoreState();
+            updateFavCount();
+            firstBatch = false;
+        }
+
+        applyFilters();
+    }
+
+    if (firstBatch) {
+        populateFilters();
+        restoreState();
+        updateFavCount();
+        applyFilters();
+    }
 }
 
 function updateStats() {
     document.getElementById('total-papers').textContent = allPapers.length;
     const conferences = new Set(allPapers.map(p => p.venue.split(' ')[0]));
     document.getElementById('total-conferences').textContent = conferences.size;
+    document.getElementById('filtered-count').textContent = filteredPapers.length || allPapers.length;
 }
 
 function populateFilters() {
@@ -100,16 +113,20 @@ function populateFilters() {
     const years = [...new Set(allPapers.map(p => p.venue.split(' ')[1]))].sort();
 
     const confSelect = document.querySelector('.custom-select[data-id="conference-filter"]');
-    conferences.forEach(c => addCustomOption(confSelect, c, c));
+    const existingConfValues = new Set([...confSelect.querySelectorAll('.custom-select-option')].map(o => o.dataset.value));
+    conferences.forEach(c => { if (!existingConfValues.has(c)) addCustomOption(confSelect, c, c); });
 
     const yearSelect = document.querySelector('.custom-select[data-id="year-filter"]');
-    years.forEach(y => addCustomOption(yearSelect, y, y));
+    const existingYearValues = new Set([...yearSelect.querySelectorAll('.custom-select-option')].map(o => o.dataset.value));
+    years.forEach(y => { if (!existingYearValues.has(y)) addCustomOption(yearSelect, y, y); });
 
     const perPageSelect = document.querySelector('.custom-select[data-id="per-page-select"]');
-    addCustomOption(perPageSelect, '10', '10');
-    addCustomOption(perPageSelect, '20', '20');
-    addCustomOption(perPageSelect, '50', '50');
-    addCustomOption(perPageSelect, '100', '100');
+    if (perPageSelect.querySelectorAll('.custom-select-option').length === 0) {
+        addCustomOption(perPageSelect, '10', '10');
+        addCustomOption(perPageSelect, '20', '20');
+        addCustomOption(perPageSelect, '50', '50');
+        addCustomOption(perPageSelect, '100', '100');
+    }
 }
 
 function applyFilters() {
