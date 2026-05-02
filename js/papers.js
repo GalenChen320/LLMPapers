@@ -155,7 +155,7 @@ function applyFilters() {
 
     if (!window._initialLoad) currentPage = 1;
     renderPapers();
-    saveState();
+    if (!window._initialLoad) saveState();
 }
 
 function renderPapers() {
