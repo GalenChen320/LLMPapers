@@ -322,10 +322,11 @@ select:focus, input[type="text"]:focus {
     font-size: 0.88rem;
     color: #6a5a4a;
     line-height: 1.65;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     margin-bottom: 15px;
-    flex: 1;
-    min-height: calc(4 * 0.88rem * 1.65);
 }
 
 .paper-tags {

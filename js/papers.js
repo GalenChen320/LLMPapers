@@ -169,8 +169,6 @@ function renderPapers() {
 
     container.innerHTML = papersToShow.map(createPaperCard).join('');
 
-    snapAbstractHeights();
-
     const totalPages = Math.ceil(filteredPapers.length / papersPerPage);
     document.getElementById('pagination').style.display = totalPages > 1 ? 'flex' : 'none';
     document.getElementById('prev-btn').disabled = currentPage === 1;
@@ -249,17 +247,6 @@ function escapeHtml(text) {
     const div = document.createElement('div');
     div.textContent = text;
     return div.innerHTML;
-}
-
-function snapAbstractHeights() {
-    const lineHeight = parseFloat(getComputedStyle(document.documentElement).fontSize) * 0.88 * 1.65;
-    document.querySelectorAll('.paper-abstract').forEach(el => {
-        const h = el.clientHeight;
-        const lines = Math.floor(h / lineHeight);
-        if (lines >= 4) {
-            el.style.maxHeight = (lines * lineHeight) + 'px';
-        }
-    });
 }
 
 function debounce(func, wait) {
