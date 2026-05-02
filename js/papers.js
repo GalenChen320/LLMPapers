@@ -56,8 +56,6 @@ function restoreState() {
 }
 
 async function loadPapers() {
-    initAllCustomSelects();
-
     const container = document.getElementById('papers-container');
     const files = Object.entries(venueFiles);
     let firstBatch = true;
