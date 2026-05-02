@@ -217,22 +217,50 @@ select:focus, input[type="text"]:focus {
     min-width: 0;
 }
 
-#search-input {
-    overflow: hidden;
+.search-wrapper {
+    position: relative;
+    flex: 1;
+    min-width: 0;
 }
 
-#search-input::placeholder {
-    display: inline-block;
+.search-wrapper input {
+    width: 100%;
+    background: #faf8f3;
+    border: 1px solid #ddd4c6;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #3a3a3a;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.search-placeholder {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a09080;
+    font-size: 0.95rem;
+    pointer-events: none;
     white-space: nowrap;
+    overflow: hidden;
+    max-width: calc(100% - 30px);
+    transition: opacity 0.2s;
 }
 
-#search-input:hover::placeholder {
-    animation: placeholder-scroll 8s linear infinite;
+.search-wrapper:hover .search-placeholder {
+    animation: placeholder-scroll 6s linear infinite;
+}
+
+.search-placeholder.hidden {
+    opacity: 0;
 }
 
 @keyframes placeholder-scroll {
-    0%, 20% { transform: translateX(0); }
-    80%, 100% { transform: translateX(-30%); }
+    0%, 15% { transform: translateY(-50%) translateX(0); }
+    85%, 100% { transform: translateY(-50%) translateX(-40%); }
 }
 
 .papers-grid {

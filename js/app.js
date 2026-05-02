@@ -1,7 +1,13 @@
 function initApp() {
     document.getElementById('conference-filter').addEventListener('change', applyFilters);
     document.getElementById('year-filter').addEventListener('change', applyFilters);
-    document.getElementById('search-input').addEventListener('input', debounce(applyFilters, 300));
+
+    const searchInput = document.getElementById('search-input');
+    const searchPlaceholder = document.getElementById('search-placeholder');
+    searchInput.addEventListener('input', () => {
+        searchPlaceholder.classList.toggle('hidden', searchInput.value.length > 0);
+        debounce(applyFilters, 300)();
+    });
 
     document.getElementById('fav-filter-btn').addEventListener('click', () => {
         showFavoritesOnly = !showFavoritesOnly;
