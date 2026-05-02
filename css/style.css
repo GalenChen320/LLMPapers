@@ -181,7 +181,7 @@ input[type="text"] { min-width: 280px; }
 .venue-neurips { background: linear-gradient(135deg, #ec4899, #f43f5e); }
 .venue-icml    { background: linear-gradient(135deg, #0ea5e9, #06b6d4); }
 .venue-acl     { background: linear-gradient(135deg, #10b981, #34d399); }
-.venue-emnlp   { background: linear-gradient(135deg, #f59e0b, #f9716); }
+.venue-emnlp   { background: linear-gradient(135deg, #f59e0b, #f97116); }
 .venue-colm    { background: linear-gradient(135deg, #8b5cf6, #a78bfa); }
 
 .paper-title {
