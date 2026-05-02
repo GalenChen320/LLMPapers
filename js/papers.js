@@ -23,8 +23,8 @@ let showFavoritesOnly = false;
 function saveState() {
     try {
         localStorage.setItem('appState', JSON.stringify({
-            conference: document.getElementById('conference-filter').value,
-            year: document.getElementById('year-filter').value,
+            conference: document.querySelector('.custom-select[data-id="conference-filter"]').dataset.value,
+            year: document.querySelector('.custom-select[data-id="year-filter"]').dataset.value,
             search: document.getElementById('search-input').value,
             perPage: papersPerPage,
             page: currentPage,
@@ -37,12 +37,12 @@ function restoreState() {
     try {
         const s = JSON.parse(localStorage.getItem('appState'));
         if (!s) return;
-        if (s.conference) document.getElementById('conference-filter').value = s.conference;
-        if (s.year) document.getElementById('year-filter').value = s.year;
+        if (s.conference) setCustomValue(document.querySelector('.custom-select[data-id="conference-filter"]'), s.conference);
+        if (s.year) setCustomValue(document.querySelector('.custom-select[data-id="year-filter"]'), s.year);
         if (s.search) document.getElementById('search-input').value = s.search;
         if (s.perPage) {
             papersPerPage = s.perPage;
-            document.getElementById('per-page-select').value = String(s.perPage);
+            setCustomValue(document.querySelector('.custom-select[data-id="per-page-select"]'), String(s.perPage));
         }
         if (s.page) {
             currentPage = s.page;
@@ -56,6 +56,8 @@ function restoreState() {
 }
 
 async function loadPapers() {
+    initAllCustomSelects();
+
     const promises = Object.entries(venueFiles).map(async ([venue, file]) => {
         try {
             const response = await fetch(file);
@@ -97,16 +99,22 @@ function populateFilters() {
     const conferences = [...new Set(allPapers.map(p => p.venue.split(' ')[0]))].sort();
     const years = [...new Set(allPapers.map(p => p.venue.split(' ')[1]))].sort();
 
-    const cs = document.getElementById('conference-filter');
-    conferences.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; cs.appendChild(o); });
+    const confSelect = document.querySelector('.custom-select[data-id="conference-filter"]');
+    conferences.forEach(c => addCustomOption(confSelect, c, c));
 
-    const ys = document.getElementById('year-filter');
-    years.forEach(y => { const o = document.createElement('option'); o.value = y; o.textContent = y; ys.appendChild(o); });
+    const yearSelect = document.querySelector('.custom-select[data-id="year-filter"]');
+    years.forEach(y => addCustomOption(yearSelect, y, y));
+
+    const perPageSelect = document.querySelector('.custom-select[data-id="per-page-select"]');
+    addCustomOption(perPageSelect, '10', '10');
+    addCustomOption(perPageSelect, '20', '20');
+    addCustomOption(perPageSelect, '50', '50');
+    addCustomOption(perPageSelect, '100', '100');
 }
 
 function applyFilters() {
-    const conference = document.getElementById('conference-filter').value;
-    const year = document.getElementById('year-filter').value;
+    const conference = document.querySelector('.custom-select[data-id="conference-filter"]').dataset.value;
+    const year = document.querySelector('.custom-select[data-id="year-filter"]').dataset.value;
     const search = document.getElementById('search-input').value.toLowerCase();
     const favs = getFavorites();
 

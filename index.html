@@ -38,15 +38,17 @@
         <div class="filters">
             <div class="filter-group">
                 <label><i class="fas fa-building"></i> Conference:</label>
-                <select id="conference-filter">
-                    <option value="all">All Conferences</option>
-                </select>
+                <div class="custom-select" data-id="conference-filter" data-value="all">
+                    <div class="custom-select-trigger"><span>All Conferences</span><i class="fas fa-chevron-down"></i></div>
+                    <div class="custom-select-options"></div>
+                </div>
             </div>
             <div class="filter-group">
                 <label><i class="fas fa-calendar"></i> Year:</label>
-                <select id="year-filter">
-                    <option value="all">All Years</option>
-                </select>
+                <div class="custom-select" data-id="year-filter" data-value="all">
+                    <div class="custom-select-trigger"><span>All Years</span><i class="fas fa-chevron-down"></i></div>
+                    <div class="custom-select-options"></div>
+                </div>
             </div>
             <div class="filter-group">
                 <label><i class="fas fa-search"></i> Search:</label>
@@ -54,12 +56,10 @@
             </div>
             <div class="filter-group">
                 <label><i class="fas fa-th-list"></i> Per page:</label>
-                <select id="per-page-select">
-                    <option value="10">10</option>
-                    <option value="20" selected>20</option>
-                    <option value="50">50</option>
-                    <option value="100">100</option>
-                </select>
+                <div class="custom-select" data-id="per-page-select" data-value="20">
+                    <div class="custom-select-trigger"><span>20</span><i class="fas fa-chevron-down"></i></div>
+                    <div class="custom-select-options"></div>
+                </div>
             </div>
             <button id="fav-filter-btn" class="fav-filter-btn">
                 <i class="fas fa-heart"></i> Favorites <span id="fav-count">0</span>
@@ -92,6 +92,7 @@
 
     <script src="js/favorites.js"></script>
     <script src="js/modal.js"></script>
+    <script src="js/custom_select.js"></script>
     <script src="js/papers.js"></script>
     <script src="js/app.js"></script>
 </body>

@@ -81,8 +81,9 @@ document.getElementById('page-jump-input').addEventListener('blur', () => {
     }
 });
 
-document.getElementById('per-page-select').addEventListener('change', (e) => {
-    papersPerPage = parseInt(e.target.value, 10);
+document.getElementById('per-page-select').addEventListener('change', () => {
+    const cs = document.querySelector('.custom-select[data-id="per-page-select"]');
+    papersPerPage = parseInt(cs.dataset.value, 10);
     currentPage = 1;
     renderPapers();
     saveState();

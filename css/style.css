@@ -99,6 +99,99 @@ select, input[type="text"] {
     font-family: inherit;
 }
 
+.custom-select {
+    position: relative;
+    min-width: 150px;
+    user-select: none;
+}
+
+.custom-select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #faf8f3;
+    border: 1px solid #ddd4c6;
+    border-radius: 10px;
+    padding: 10px 14px;
+    color: #3a3a3a;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    gap: 8px;
+}
+
+.custom-select-trigger span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.custom-select-trigger i {
+    font-size: 0.7rem;
+    color: #c49a6c;
+    transition: transform 0.3s ease;
+}
+
+.custom-select.open .custom-select-trigger i {
+    transform: rotate(180deg);
+}
+
+.custom-select-trigger:hover {
+    border-color: #c49a6c;
+}
+
+.custom-select.open .custom-select-trigger {
+    border-color: #c49a6c;
+    box-shadow: 0 0 0 3px rgba(196, 154, 108, 0.15);
+}
+
+.custom-select-options {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd4c6;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    z-index: 100;
+    max-height: 240px;
+    overflow-y: auto;
+    display: none;
+    padding: 4px;
+}
+
+.custom-select.open .custom-select-options {
+    display: block;
+    animation: slideDown 0.15s ease;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.custom-select-option {
+    padding: 9px 14px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    color: #3a3a3a;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.custom-select-option:hover {
+    background: #f5efe6;
+    color: #5b4636;
+}
+
+.custom-select-option.selected {
+    background: #c49a6c;
+    color: #fff;
+    font-weight: 500;
+}
+
 select:hover, input[type="text"]:hover { border-color: #c49a6c; }
 
 select:focus, input[type="text"]:focus {
@@ -396,5 +489,6 @@ input[type="text"] { min-width: 280px; }
     .filters { flex-direction: column; align-items: stretch; }
     .filter-group { flex-direction: column; align-items: stretch; }
     select, input[type="text"] { min-width: 100%; }
+    .custom-select { min-width: 100%; }
     .modal { padding: 24px; }
 }
